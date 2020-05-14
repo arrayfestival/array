@@ -101,4 +101,10 @@
       text-align: left;
     }
   }
+  // Text card 5 (second date)
+  &:nth-of-type(13) {
+    grid-column-start: col-start 3;
+    grid-column-end: col-start 5;
+    grid-row-start: row-start 7;
+  }
 }
