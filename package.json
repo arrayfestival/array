@@ -1,0 +1,33 @@
+{
+  "name": "array",
+  "version": "1.0.0",
+  "description": "Repository for The Array Music Festical",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arrayfestival/array.git"
+  },
+  "keywords": [
+    "Array",
+    "Music",
+    "Festival"
+  ],
+  "author": "The Array",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arrayfestival/array/issues"
+  },
+  "homepage": "https://github.com/arrayfestival/array#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-gzip": "^1.4.2",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-watch": "^5.0.1"
+  }
+}
