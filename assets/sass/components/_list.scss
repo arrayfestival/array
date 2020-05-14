@@ -54,18 +54,18 @@
     grid-row-start: row-start 4;
     justify-content: flex-end;
   }
-  // Text card 1
+  // Text card
   &:nth-of-type(6) {
     grid-column-start: col-start 5;
     grid-column-end: col-start 7;
   }
-  // Text card 2
+  // Text card
   &:nth-of-type(7) {
     grid-column-start: 1;
     grid-column-end: col-start 2;
     grid-row-start: row-start 1;
   }
-  // Text card 3 (with link)
+  // Text card (with link)
   &:nth-of-type(8) {
     grid-column-start: col-start 4;
     grid-column-end: col-start 7;
@@ -80,19 +80,19 @@
     grid-column-end: col-start 8;
     grid-row-start: row-start 4;
   }
-  // Text card 4 (first date)
+  // Text card (first date)
   &:nth-of-type(10) {
     grid-column-start: col-start 1;
     grid-column-end: col-start 3;
     grid-row-start: row-start 5;
   }
-  // Text card 5 (first simple text)
+  // Text card (first simple text)
   &:nth-of-type(11) {
     grid-column-start: col-start 2;
     grid-column-end: col-start 6;
     grid-row-start: row-start 5;
   }
-  // Text card 5 (second simple text, in white)
+  // Text card (second simple text, in white)
   &:nth-of-type(12) {
     grid-column-start: col-start 3;
     grid-column-end: col-start 4;
@@ -101,7 +101,7 @@
       text-align: left;
     }
   }
-  // Text card 5 (second date)
+  // Text card (second date)
   &:nth-of-type(13) {
     grid-column-start: col-start 3;
     grid-column-end: col-start 5;
@@ -160,5 +160,40 @@
     grid-column-start: col-start 5;
     grid-column-end: col-start 8;
     grid-row-start: row-start 9;
+  }
+  // Text card (third simple text, in white)
+  &:nth-of-type(20) {
+    grid-column-start: 1;
+    grid-column-end: col-start 1;
+    grid-row-start: row-start 10;
+    .card__text {
+      text-align: left;
+    }
+  }
+  // Text card (third date)
+  &:nth-of-type(21) {
+    grid-column-start: 1;
+    grid-column-end: col-start 2;
+    grid-row-start: row-start 11;
+  }
+  // Artist title 4
+  &:nth-of-type(22) {
+    grid-column-start: 1;
+    grid-column-end: col-start 3;
+    grid-row-start: row-start 14;
+    .card {
+      align-items: flex-start;
+      justify-content: flex-end;
+      padding: 0;
+    }
+    .card__heading {
+      text-align: right;
+    }
+  }
+  // Artist photo 4
+  &:nth-of-type(23) {
+    grid-column-start: 1;
+    grid-column-end: col-start 3;
+    grid-row-start: row-start 12;
   }
 }
