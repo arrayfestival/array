@@ -7,7 +7,7 @@
 .list--grid {
   display: grid;
   grid-template-columns: repeat($grid-columns, 12.5% [col-start]);
-  grid-template-rows: repeat(6, calc(#{$container-max-width-tablet} / 8) [row-start]);
+  grid-template-rows: repeat(21, calc(#{$container-max-width-tablet} / 8) [row-start]);
 }
 
 .list__item {
@@ -85,5 +85,20 @@
     grid-column-start: col-start 1;
     grid-column-end: col-start 3;
     grid-row-start: row-start 5;
+  }
+  // Text card 5 (first simple text)
+  &:nth-of-type(11) {
+    grid-column-start: col-start 2;
+    grid-column-end: col-start 6;
+    grid-row-start: row-start 5;
+  }
+  // Text card 5 (second simple text, in white)
+  &:nth-of-type(12) {
+    grid-column-start: col-start 3;
+    grid-column-end: col-start 4;
+    grid-row-start: row-start 6;
+    .card__text {
+      text-align: left;
+    }
   }
 }
