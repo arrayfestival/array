@@ -1,0 +1,49 @@
+.card {
+  height: 100%;
+}
+
+.card--text {
+  align-items: center;
+  background-color: $color3;
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem;
+}
+
+.card--time {
+  padding: 0 3rem 0 5rem;
+}
+
+.card--simple {
+  background-color: transparent;
+  padding-left: 0;
+  padding-right: 0;
+  .card__text {
+    color: $color3;
+  }
+}
+
+.card--color-inverted {
+  .card__text {
+    color: $color2;
+  }
+}
+
+.card__text {
+  color: $color2;
+  font-weight: 900;
+  letter-spacing: 0.15em;
+  line-height: 1.375;
+  margin: 0;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.card__link {
+  color: $color2;
+  transition: color 0.2s ease-out;
+  &:hover,
+  &:focus {
+    color: $color1;
+  }
+}

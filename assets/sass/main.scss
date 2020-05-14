@@ -1,0 +1,20 @@
+@import 'variables';
+@import 'palette';
+@import 'typography';
+@import 'utilities';
+@import 'components/card';
+@import 'components/icons';
+@import 'components/list';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $color1;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1024px;
+}
