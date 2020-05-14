@@ -196,4 +196,61 @@
     grid-column-end: col-start 3;
     grid-row-start: row-start 12;
   }
+  // Artist title 5
+  &:nth-of-type(24) {
+    grid-column-start: col-start 4;
+    grid-column-end: col-start 7;
+    grid-row-start: row-start 13;
+    .card {
+      align-items: flex-end;
+      justify-content: flex-end;
+      padding: 0;
+    }
+    .card__heading {
+      text-align: right;
+    }
+  }
+  // Artist photo 5
+  &:nth-of-type(25) {
+    grid-column-start: col-start 4;
+    grid-column-end: col-start 7;
+    grid-row-start: row-start 14;
+  }
+  // Artist title 6
+  &:nth-of-type(26) {
+    grid-column-start: col-start 4;
+    grid-column-end: col-start 7;
+    grid-row-start: row-start 18;
+    .card {
+      align-items: flex-start;
+      justify-content: flex-end;
+      padding: 0;
+    }
+    .card__heading {
+      text-align: right;
+    }
+  }
+  // Artist photo 6
+  &:nth-of-type(27) {
+    grid-column-start: col-start 4;
+    grid-column-end: col-start 7;
+    grid-row-start: row-start 16;
+  }
+  // Artist title 7
+  &:nth-of-type(28) {
+    grid-column-start: 1;
+    grid-column-end: col-start 4;
+    grid-row-start: row-start 15;
+    .card {
+      align-items: flex-end;
+      justify-content: flex-start;
+      padding: 0;
+    }
+  }
+  // Artist photo 7
+  &:nth-of-type(29) {
+    grid-column-start: 1;
+    grid-column-end: col-start 3;
+    grid-row-start: row-start 16;
+  }
 }
