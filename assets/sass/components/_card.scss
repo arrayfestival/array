@@ -24,8 +24,12 @@
 }
 
 .card--color-inverted {
+  background-color: $color4;
+  padding-left: 1rem;
+  padding-right: 1rem;
   .card__text {
     color: $color2;
+    text-align: center;
   }
 }
 

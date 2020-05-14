@@ -127,9 +127,6 @@
       grid-column-start: col-start 3;
       grid-column-end: col-start 4;
     }
-    .card__text {
-      text-align: left;
-    }
   }
   // Text card (second date)
   &:nth-of-type(13) {
@@ -226,9 +223,6 @@
     grid-row-start: row-start 11;
     @media screen and (min-width: #{$container-max-width-desktop}) {
       grid-row-start: row-start 10;
-    }
-    .card__text {
-      text-align: left;
     }
   }
   // Text card (third date)
