@@ -24,19 +24,27 @@
   align-items: center;
   background-color: $color4;
   justify-content: center;
+  position: relative;
   text-align: center;
   .card__link {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     display: block;
     font-size: 0.75rem;
+    height: 100%;
     letter-spacing: 0.15em;
     text-decoration: none;
+    width: 100%;
   }
   .card__text {
     color: $color2;
     text-align: center;
   }
   .icon--instagram {
-    margin-top: -1rem;
+    margin-top: 0.5rem;
   }
 }
 
