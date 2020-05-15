@@ -133,7 +133,10 @@
 #list__item__12 {
   grid-column-start: 1;
   grid-column-end: col-start 1;
-  grid-row-start: row-start 7;
+  grid-row-start: row-start 6;
+  @media screen and (min-width: #{$container-max-width-tablet}) {
+    grid-row-start: row-start 7;
+  }
   @media screen and (min-width: #{$container-max-width-desktop}) {
     grid-column-start: col-start 2;
     grid-column-end: col-start 3;
@@ -142,9 +145,13 @@
 
 // Text card (second date)
 #list__item__13 {
-  grid-column-start: col-start 1;
-  grid-column-end: col-start 3;
+  grid-column-start: 1;
+  grid-column-end: col-start 2;
   grid-row-start: row-start 7;
+  @media screen and (min-width: #{$container-max-width-tablet}) {
+    grid-column-start: col-start 1;
+    grid-column-end: col-start 3;
+  }
   @media screen and (min-width: #{$container-max-width-desktop}) {
     grid-column-start: col-start 3;
     grid-column-end: col-start 5;
@@ -153,9 +160,13 @@
 
 // Artist title 1
 #list__item__14 {
-  grid-column-start: col-start 3;
-  grid-column-end: col-start 6;
+  grid-column-start: col-start 2;
+  grid-column-end: col-start 4;
   grid-row-start: row-start 6;
+  @media screen and (min-width: #{$container-max-width-tablet}) {
+    grid-column-start: col-start 3;
+    grid-column-end: col-start 6;
+  }
   @media screen and (min-width: #{$container-max-width-desktop}) {
     grid-column-start: col-start 5;
     grid-column-end: col-start 8;
@@ -169,9 +180,13 @@
 
 // Artist photo 1
 #list__item__15 {
-  grid-column-start: col-start 3;
-  grid-column-end: col-start 6;
+  grid-column-start: col-start 2;
+  grid-column-end: col-start 4;
   grid-row-start: row-start 7;
+  @media screen and (min-width: #{$container-max-width-tablet}) {
+    grid-column-start: col-start 3;
+    grid-column-end: col-start 6;
+  }
   @media screen and (min-width: #{$container-max-width-desktop}) {
     grid-column-start: col-start 5;
     grid-column-end: col-start 8;
@@ -197,8 +212,11 @@
 // Artist photo 2
 #list__item__17 {
   grid-column-start: 1;
-  grid-column-end: col-start 3;
+  grid-column-end: col-start 2;
   grid-row-start: row-start 9;
+  @media screen and (min-width: #{$container-max-width-tablet}) {
+    grid-column-end: col-start 3;
+  }
   @media screen and (min-width: #{$container-max-width-desktop}) {
     grid-column-start: col-start 2;
     grid-column-end: col-start 5;
@@ -207,28 +225,44 @@
 
 // Artist title 3
 #list__item__18 {
-  grid-column-start: col-start 3;
-  grid-column-end: col-start 6;
-  grid-row-start: row-start 11;
-  @media screen and (min-width: #{$container-max-width-desktop}) {
-    grid-column-start: col-start 5;
-    grid-column-end: col-start 8;
-  }
+  grid-column-start: 1;
+  grid-column-end: col-start 4;
+  grid-row-start: row-start 10;
   .card {
-    align-items: flex-start;
+    align-items: flex-end;
     justify-content: flex-end;
     padding: 0;
   }
   .card__heading {
     text-align: right;
+    transform: translateY(-0.5rem);
+  }
+  @media screen and (min-width: #{$container-max-width-tablet}) {
+    grid-column-start: col-start 3;
+    grid-column-end: col-start 6;
+    grid-row-start: row-start 11;
+    .card {
+      align-items: flex-start;
+    }
+    .card__heading {
+      transform: none;
+    }
+  }
+  @media screen and (min-width: #{$container-max-width-desktop}) {
+    grid-column-start: col-start 5;
+    grid-column-end: col-start 8;
   }
 }
 
 // Artist photo 3
 #list__item__19 {
-  grid-column-start: col-start 3;
-  grid-column-end: col-start 6;
+  grid-column-start: col-start 2;
+  grid-column-end: col-start 4;
   grid-row-start: row-start 9;
+  @media screen and (min-width: #{$container-max-width-tablet}) {
+    grid-column-start: col-start 3;
+    grid-column-end: col-start 6;
+  }
   @media screen and (min-width: #{$container-max-width-desktop}) {
     grid-column-start: col-start 5;
     grid-column-end: col-start 8;
@@ -269,9 +303,13 @@
 
 // Artist photo 4
 #list__item__23 {
-  grid-column-start: col-start 2;
-  grid-column-end: col-start 5;
+  grid-column-start: col-start 1;
+  grid-column-end: col-start 4;
   grid-row-start: row-start 13;
+  @media screen and (min-width: #{$container-max-width-tablet}) {
+    grid-column-start: col-start 2;
+    grid-column-end: col-start 5;
+  }
   @media screen and (min-width: #{$container-max-width-desktop}) {
     grid-row-start: row-start 12;
   }
