@@ -16,53 +16,18 @@
   }
 }
 
-// All ARRAY letters
-#list__item__1,
-#list__item__2,
-#list__item__3,
-#list__item__4,
-#list__item__5 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-// A
+// ARRAY logo
 #list__item__1 {
-  align-items: flex-start;
-  grid-column-start: col-start 1;
-}
-
-// R
-#list__item__2 {
+  align-items: center;
+  display: flex;
+  justify-content: center;
   grid-column-start: col-start 2;
-  grid-row-start: row-start 1;
-  .icon {
-    transform: rotate(-45deg);
-  }
-}
-
-// R
-#list__item__3 {
-  grid-column-start: col-start 1;
+  grid-column-end: col-start 5;
   grid-row-start: row-start 2;
-}
-
-// A
-#list__item__4 {
-  grid-column-start: col-start 2;
-  grid-row-start: row-start 3;
-  .icon {
-    transform: rotate(-180deg);
+  @media screen and (min-width: #{$container-max-width-desktop}) {
+    grid-column-start: col-start 3;
+    grid-column-end: col-start 6;
   }
-}
-
-// Y
-#list__item__5 {
-  align-items: flex-start;
-  grid-column-start: col-start 1;
-  grid-row-start: row-start 4;
-  justify-content: flex-end;
 }
 
 // Text card
@@ -79,7 +44,7 @@
 #list__item__7 {
   grid-column-start: 1;
   grid-column-end: col-start 2;
-  grid-row-start: row-start 1;
+  grid-row-start: row-start 2;
 }
 
 // Text card (with link)
