@@ -387,23 +387,27 @@
   grid-column-start: col-start 3;
   grid-column-end: col-start 5;
   grid-row-start: row-start 22;
+  justify-content: center;
   @media screen and (min-width: #{$container-max-width-desktop}) {
-    align-items: flex-end;
+    grid-column-end: col-start 7;
     grid-row-start: row-start 19;
+  }
+  .img-fluid {
+    max-width: 27rem;
   }
 }
 
 // The Albany logo
 #list__item__32 {
   align-items: center;
-  grid-column-start: col-start 5;
-  grid-column-end: col-start 6;
-  grid-row-start: row-start 22;
+  grid-column-start: col-start 4;
+  grid-column-end: col-start 5;
+  grid-row-start: row-start 24;
   justify-content: flex-end;
   @media screen and (min-width: #{$container-max-width-desktop}) {
-    grid-column-start: col-start 6;
-    grid-column-end: col-start 7;
-    grid-row-start: row-start 19;
+    grid-column-start: col-start 5;
+    grid-column-end: col-start 6;
+    grid-row-start: row-start 21;
     justify-content: center;
   }
   .img-fluid {
