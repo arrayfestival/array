@@ -30,6 +30,17 @@
   }
 }
 
+// Instagram link
+#list__item__2 {
+  grid-column-start: col-start 5;
+  grid-column-end: col-start 6;
+  grid-row-start: row-start 2;
+  @media screen and (min-width: #{$container-max-width-desktop}) {
+    grid-column-start: col-start 7;
+    grid-column-end: col-start 8;
+  }
+}
+
 // Text card
 #list__item__6 {
   grid-column-start: col-start 4;
