@@ -351,8 +351,24 @@
   }
 }
 
+// Producer/funder logos
+#list__item__30,
+#list__item__31,
+#list__item__32,
+#list__item__33,
+#list__item__34,
+#list__item__35 {
+  display: flex;
+  height: 100%;
+  .list__item__link {
+    display: block;
+  }
+}
+
+
 // PRS logo
 #list__item__30 {
+  align-items: center;
   grid-column-start: 1;
   grid-column-end: col-start 2;
   grid-row-start: row-start 22;
@@ -363,58 +379,80 @@
 
 // Arts Council logo
 #list__item__31 {
-  grid-column-start: col-start 2;
-  grid-column-end: col-start 4;
+  align-items: center;
+  grid-column-start: col-start 3;
+  grid-column-end: col-start 5;
   grid-row-start: row-start 22;
   @media screen and (min-width: #{$container-max-width-desktop}) {
-    grid-column-start: col-start 3;
-    grid-column-end: col-start 5;
+    align-items: flex-end;
     grid-row-start: row-start 19;
   }
 }
 
 // The Albany logo
 #list__item__32 {
+  align-items: center;
   grid-column-start: col-start 5;
   grid-column-end: col-start 6;
   grid-row-start: row-start 22;
+  justify-content: flex-end;
   @media screen and (min-width: #{$container-max-width-desktop}) {
     grid-column-start: col-start 6;
     grid-column-end: col-start 7;
     grid-row-start: row-start 19;
+    justify-content: center;
+  }
+  .img-fluid {
+    max-width: 6.5rem;
   }
 }
 
 // Social Convention logo
 #list__item__33 {
+  align-items: center;
   grid-column-start: col-start 1;
   grid-column-end: col-start 2;
   grid-row-start: row-start 23;
+  justify-content: center;
   @media screen and (min-width: #{$container-max-width-desktop}) {
     grid-row-start: row-start 20;
+  }
+  .img-fluid {
+    max-width: 7rem;
   }
 }
 
 // Call And Response logo
 #list__item__34 {
+  align-items: flex-end;
   grid-column-start: col-start 2;
   grid-column-end: col-start 4;
   grid-row-start: row-start 23;
+  justify-content: flex-end;
   @media screen and (min-width: #{$container-max-width-desktop}) {
     grid-column-start: col-start 3;
     grid-column-end: col-start 5;
     grid-row-start: row-start 20;
   }
+  .img-fluid {
+    max-width: 12rem;
+  }
 }
 
 // NX Records logo
 #list__item__35 {
+  align-items: flex-end;
   grid-column-start: col-start 6;
   grid-column-end: col-start 4;
   grid-row-start: row-start 23;
+  justify-content: center;
   @media screen and (min-width: #{$container-max-width-desktop}) {
+    align-items: center;
     grid-column-start: col-start 5;
     grid-column-end: col-start 7;
     grid-row-start: row-start 20;
+  }
+  .img-fluid {
+    max-width: 11rem;
   }
 }
