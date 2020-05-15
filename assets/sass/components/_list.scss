@@ -350,3 +350,71 @@
     grid-row-start: row-start 16;
   }
 }
+
+// PRS logo
+#list__item__30 {
+  grid-column-start: 1;
+  grid-column-end: col-start 2;
+  grid-row-start: row-start 22;
+  @media screen and (min-width: #{$container-max-width-desktop}) {
+    grid-row-start: row-start 19;
+  }
+}
+
+// Arts Council logo
+#list__item__31 {
+  grid-column-start: col-start 2;
+  grid-column-end: col-start 4;
+  grid-row-start: row-start 22;
+  @media screen and (min-width: #{$container-max-width-desktop}) {
+    grid-column-start: col-start 3;
+    grid-column-end: col-start 5;
+    grid-row-start: row-start 19;
+  }
+}
+
+// The Albany logo
+#list__item__32 {
+  grid-column-start: col-start 5;
+  grid-column-end: col-start 6;
+  grid-row-start: row-start 22;
+  @media screen and (min-width: #{$container-max-width-desktop}) {
+    grid-column-start: col-start 6;
+    grid-column-end: col-start 7;
+    grid-row-start: row-start 19;
+  }
+}
+
+// Social Convention logo
+#list__item__33 {
+  grid-column-start: col-start 1;
+  grid-column-end: col-start 2;
+  grid-row-start: row-start 23;
+  @media screen and (min-width: #{$container-max-width-desktop}) {
+    grid-row-start: row-start 20;
+  }
+}
+
+// Call And Response logo
+#list__item__34 {
+  grid-column-start: col-start 2;
+  grid-column-end: col-start 4;
+  grid-row-start: row-start 23;
+  @media screen and (min-width: #{$container-max-width-desktop}) {
+    grid-column-start: col-start 3;
+    grid-column-end: col-start 5;
+    grid-row-start: row-start 20;
+  }
+}
+
+// NX Records logo
+#list__item__35 {
+  grid-column-start: col-start 6;
+  grid-column-end: col-start 4;
+  grid-row-start: row-start 23;
+  @media screen and (min-width: #{$container-max-width-desktop}) {
+    grid-column-start: col-start 5;
+    grid-column-end: col-start 7;
+    grid-row-start: row-start 20;
+  }
+}
