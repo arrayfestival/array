@@ -25,9 +25,16 @@
   align-items: center;
   display: flex;
   justify-content: center;
-  grid-column-start: col-start 2;
-  grid-column-end: col-start 5;
-  grid-row-start: row-start 2;
+  grid-column-start: 1;
+  grid-column-end: col-start 2;
+  grid-row-start: 1;
+  grid-row-end: row-start 2;
+  @media screen and (min-width: #{$container-max-width-tablet}) {
+    grid-column-start: col-start 2;
+    grid-column-end: col-start 5;
+    grid-row-start: row-start 2;
+    grid-row-end: initial;
+  }
   @media screen and (min-width: #{$container-max-width-desktop}) {
     grid-column-start: col-start 3;
     grid-column-end: col-start 6;
@@ -36,9 +43,13 @@
 
 // Instagram link
 #list__item__2 {
-  grid-column-start: col-start 5;
-  grid-column-end: col-start 6;
+  grid-column-start: col-start 3;
+  grid-column-end: col-start 4;
   grid-row-start: row-start 2;
+  @media screen and (min-width: #{$container-max-width-tablet}) {
+    grid-column-start: col-start 5;
+    grid-column-end: col-start 6;
+  }
   @media screen and (min-width: #{$container-max-width-desktop}) {
     grid-column-start: col-start 7;
     grid-column-end: col-start 8;
@@ -47,8 +58,12 @@
 
 // Text card
 #list__item__6 {
-  grid-column-start: col-start 4;
-  grid-column-end: col-start 6;
+  grid-column-start: col-start 2;
+  grid-column-end: col-start 4;
+  @media screen and (min-width: #{$container-max-width-tablet}) {
+    grid-column-start: col-start 4;
+    grid-column-end: col-start 6;
+  }
   @media screen and (min-width: #{$container-max-width-desktop}) {
     grid-column-start: col-start 5;
     grid-column-end: col-start 7;
@@ -64,9 +79,14 @@
 
 // Text card (with link)
 #list__item__8 {
-  grid-column-start: col-start 2;
-  grid-column-end: col-start 5;
-  grid-row-start: row-start 4;
+  grid-column-start: col-start 1;
+  grid-column-end: col-start 4;
+  grid-row-start: row-start 3;
+  @media screen and (min-width: #{$container-max-width-tablet}) {
+    grid-column-start: col-start 2;
+    grid-column-end: col-start 5;
+    grid-row-start: row-start 4;
+  }
   @media screen and (min-width: #{$container-max-width-desktop}) {
     grid-column-start: col-start 4;
     grid-column-end: col-start 7;
@@ -100,23 +120,23 @@
 
 // Text card (first simple text)
 #list__item__11 {
-  grid-column-start: col-start 1;
-  grid-column-end: col-start 5;
-  grid-row-start: row-start 5;
+  grid-column-start: 1;
+  grid-column-end: col-start 1;
+  grid-row-start: row-start 4;
   @media screen and (min-width: #{$container-max-width-desktop}) {
-    grid-column-start: col-start 2;
-    grid-column-end: col-start 6;
+    grid-column-start: col-start 1;
+    grid-column-end: col-start 2;
   }
 }
 
-// Text card (second simple text, in white)
+// Text card (Night 1 video drop)
 #list__item__12 {
-  grid-column-start: col-start 1;
-  grid-column-end: col-start 2;
-  grid-row-start: row-start 6;
+  grid-column-start: 1;
+  grid-column-end: col-start 1;
+  grid-row-start: row-start 7;
   @media screen and (min-width: #{$container-max-width-desktop}) {
-    grid-column-start: col-start 3;
-    grid-column-end: col-start 4;
+    grid-column-start: col-start 2;
+    grid-column-end: col-start 3;
   }
 }
 

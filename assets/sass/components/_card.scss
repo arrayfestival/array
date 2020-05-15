@@ -49,11 +49,20 @@
     }
   }
   .card__text {
-    color: $color2;
+    color: $color3;
     text-align: center;
   }
   .icon--instagram {
     margin-top: 0.5rem;
+  }
+}
+
+.card--type-4 {
+  background-color: $color5;
+  padding: 0;
+  .card__text {
+    color: $color3;
+    text-align: center;
   }
 }
 
