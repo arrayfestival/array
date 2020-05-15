@@ -220,9 +220,6 @@
   grid-column-start: 1;
   grid-column-end: col-start 1;
   grid-row-start: row-start 11;
-  @media screen and (min-width: #{$container-max-width-desktop}) {
-    grid-row-start: row-start 10;
-  }
 }
 
 // Text card (third date)
@@ -230,21 +227,18 @@
   grid-column-start: 1;
   grid-column-end: col-start 2;
   grid-row-start: row-start 12;
-  @media screen and (min-width: #{$container-max-width-desktop}) {
-    grid-row-start: row-start 11;
-  }
 }
 
 // Artist title 4
 #list__item__22 {
-  grid-column-start: 1;
-  grid-column-end: col-start 3;
-  grid-row-start: row-start 15;
+  grid-column-start: col-start 2;
+  grid-column-end: col-start 4;
+  grid-row-start: row-start 12;
   @media screen and (min-width: #{$container-max-width-desktop}) {
-    grid-row-start: row-start 14;
+    grid-row-start: row-start 11;
   }
   .card {
-    align-items: flex-start;
+    align-items: flex-end;
     justify-content: flex-end;
     padding: 0;
   }
@@ -255,8 +249,8 @@
 
 // Artist photo 4
 #list__item__23 {
-  grid-column-start: 1;
-  grid-column-end: col-start 3;
+  grid-column-start: col-start 2;
+  grid-column-end: col-start 5;
   grid-row-start: row-start 13;
   @media screen and (min-width: #{$container-max-width-desktop}) {
     grid-row-start: row-start 12;
@@ -269,8 +263,8 @@
   grid-column-end: col-start 6;
   grid-row-start: row-start 15;
   @media screen and (min-width: #{$container-max-width-desktop}) {
-    grid-column-start: col-start 4;
-    grid-column-end: col-start 7;
+    grid-column-start: col-start 5;
+    grid-column-end: col-start 8;
     grid-row-start: row-start 13;
   }
   .card {
@@ -289,8 +283,8 @@
   grid-column-end: col-start 6;
   grid-row-start: row-start 16;
   @media screen and (min-width: #{$container-max-width-desktop}) {
-    grid-column-start: col-start 4;
-    grid-column-end: col-start 7;
+    grid-column-start: col-start 5;
+    grid-column-end: col-start 8;
     grid-row-start: row-start 14;
   }
 }
@@ -331,17 +325,22 @@
 #list__item__28 {
   grid-column-start: 1;
   grid-column-end: col-start 4;
-  grid-row-start: row-start 21;
+  grid-row-start: row-start 20;
+  @media screen and (min-width: #{$container-max-width-desktop}) {
+    grid-row-start: row-start 21;
+    .card__heading {
+      width: min-content;
+    }
+  }
   .card {
     align-items: flex-start;
-    justify-content: flex-start;
+    @media screen and (min-width: #{$container-max-width-desktop}) {
+      align-items: flex-end;
+    }
     padding: 0;
   }
   @media screen and (min-width: #{$container-max-width-desktop}) {
     grid-row-start: row-start 15;
-    .card {
-      align-items: flex-end;
-    }
   }
 }
 
@@ -349,8 +348,10 @@
 #list__item__29 {
   grid-column-start: 1;
   grid-column-end: col-start 3;
-  grid-row-start: row-start 19;
+  grid-row-start: row-start 18;
   @media screen and (min-width: #{$container-max-width-desktop}) {
+    grid-column-start: col-start 1;
+    grid-column-end: col-start 4;
     grid-row-start: row-start 16;
   }
 }
