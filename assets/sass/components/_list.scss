@@ -376,7 +376,7 @@
   align-items: center;
   grid-column-start: 1;
   grid-column-end: col-start 2;
-  grid-row-start: row-start 22;
+  grid-row-start: row-start 21;
   @media screen and (min-width: #{$container-max-width-desktop}) {
     grid-row-start: row-start 19;
   }
@@ -387,7 +387,7 @@
   align-items: center;
   grid-column-start: col-start 3;
   grid-column-end: col-start 5;
-  grid-row-start: row-start 22;
+  grid-row-start: row-start 21;
   justify-content: center;
   @media screen and (min-width: #{$container-max-width-desktop}) {
     grid-column-end: col-start 7;
@@ -403,7 +403,7 @@
   align-items: center;
   grid-column-start: col-start 4;
   grid-column-end: col-start 5;
-  grid-row-start: row-start 24;
+  grid-row-start: row-start 23;
   justify-content: flex-end;
   @media screen and (min-width: #{$container-max-width-desktop}) {
     grid-column-start: col-start 5;
@@ -421,7 +421,7 @@
   align-items: center;
   grid-column-start: col-start 1;
   grid-column-end: col-start 2;
-  grid-row-start: row-start 23;
+  grid-row-start: row-start 22;
   justify-content: center;
   @media screen and (min-width: #{$container-max-width-desktop}) {
     grid-row-start: row-start 20;
@@ -436,7 +436,7 @@
   align-items: flex-end;
   grid-column-start: col-start 2;
   grid-column-end: col-start 4;
-  grid-row-start: row-start 23;
+  grid-row-start: row-start 22;
   justify-content: flex-end;
   @media screen and (min-width: #{$container-max-width-desktop}) {
     grid-column-start: col-start 3;
@@ -453,7 +453,7 @@
   align-items: flex-end;
   grid-column-start: col-start 6;
   grid-column-end: col-start 4;
-  grid-row-start: row-start 23;
+  grid-row-start: row-start 22;
   justify-content: center;
   @media screen and (min-width: #{$container-max-width-desktop}) {
     align-items: center;
