@@ -27,6 +27,9 @@
   align-items: center;
   display: flex;
   justify-content: center;
+  .img-fluid {
+    padding: 1rem;
+  }
   @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
     grid-column-start: 1;
     grid-column-end: col-start 2;
@@ -42,6 +45,9 @@
   @media screen and (min-width: #{$container-max-width-desktop}) {
     grid-column-start: col-start 3;
     grid-column-end: col-start 6;
+    .img-fluid {
+      padding: 2rem;
+    }
   }
 }
 
