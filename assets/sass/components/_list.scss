@@ -108,7 +108,7 @@
     grid-column-end: col-start 4;
     grid-row-start: row-start 3;
     .card__text {
-      max-width: 75%;
+      max-width: 90%;
     }
   }
   @media screen and (min-width: #{$container-max-width-tablet}) {
