@@ -27,10 +27,12 @@
   align-items: center;
   display: flex;
   justify-content: center;
-  grid-column-start: 1;
-  grid-column-end: col-start 2;
-  grid-row-start: 1;
-  grid-row-end: row-start 2;
+  @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
+    grid-column-start: 1;
+    grid-column-end: col-start 2;
+    grid-row-start: 1;
+    grid-row-end: row-start 2;
+  }
   @media screen and (min-width: #{$container-max-width-tablet}) {
     grid-column-start: col-start 2;
     grid-column-end: col-start 5;
@@ -45,9 +47,14 @@
 
 // Instagram link
 #list__item__2 {
-  grid-column-start: col-start 3;
-  grid-column-end: col-start 4;
+  grid-column-start: 1;
+  grid-column-end: col-start 1;
   grid-row-start: row-start 2;
+  @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
+    grid-column-start: col-start 3;
+    grid-column-end: col-start 4;
+    grid-row-start: row-start 2;
+  }
   @media screen and (min-width: #{$container-max-width-tablet}) {
     grid-column-start: col-start 5;
     grid-column-end: col-start 6;
@@ -60,8 +67,12 @@
 
 // Text card
 #list__item__6 {
-  grid-column-start: col-start 2;
-  grid-column-end: col-start 4;
+  grid-column-start: col-start 1;
+  grid-column-end: col-start 2;
+  @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
+    grid-column-start: col-start 2;
+    grid-column-end: col-start 4;
+  }
   @media screen and (min-width: #{$container-max-width-tablet}) {
     grid-column-start: col-start 4;
     grid-column-end: col-start 6;
@@ -70,20 +81,36 @@
     grid-column-start: col-start 5;
     grid-column-end: col-start 7;
   }
+  .card__text {
+    text-align: left;
+  }
 }
 
 // Text card
 #list__item__7 {
   grid-column-start: 1;
-  grid-column-end: col-start 2;
-  grid-row-start: row-start 2;
+  grid-column-end: col-start 1;
+  grid-row-start: row-start 3;
+  @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
+    grid-column-start: 1;
+    grid-column-end: col-start 2;
+    grid-row-start: row-start 2;
+  }
 }
 
-// Text card (with link)
+// Text card (register link)
 #list__item__8 {
-  grid-column-start: col-start 1;
-  grid-column-end: col-start 4;
-  grid-row-start: row-start 3;
+  grid-column-start: 1;
+  grid-column-end: col-start 2;
+  grid-row-start: row-start 1;
+  @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
+    grid-column-start: col-start 1;
+    grid-column-end: col-start 4;
+    grid-row-start: row-start 3;
+    .card__text {
+      max-width: 75%;
+    }
+  }
   @media screen and (min-width: #{$container-max-width-tablet}) {
     grid-column-start: col-start 2;
     grid-column-end: col-start 5;
@@ -92,9 +119,6 @@
   @media screen and (min-width: #{$container-max-width-desktop}) {
     grid-column-start: col-start 4;
     grid-column-end: col-start 7;
-  }
-  .card__text {
-    max-width: 75%;
   }
 }
 

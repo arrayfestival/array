@@ -10,3 +10,9 @@ $container-max-width-mobile-portrait: 100%;
 $container-max-width-mobile-landscape: 512px;
 $container-max-width-tablet: 768px;
 $container-max-width-desktop: 1024px;
+
+// Offset number, so we can hide the main content and leave funder logos right under the top section
+$grid-rows-mobile-portrait-offset: -19;
+$grid-rows-mobile-landscape-offset: -19;
+$grid-rows-tablet-offset: -16;
+$grid-rows-desktop-offset: -14;

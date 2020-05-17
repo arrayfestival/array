@@ -52,8 +52,16 @@
     color: $color3;
     text-align: center;
   }
+  .card__link {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
   .icon--instagram {
-    margin-top: 0.5rem;
+    height: 5rem;
+    margin-top: -0.5rem;
+    width: 5rem;
   }
 }
 
