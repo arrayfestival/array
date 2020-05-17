@@ -11,6 +11,13 @@
   padding: 0 3rem 0 5rem;
 }
 
+.card--type-1 {
+  .card__text {
+    font-size: 1.25rem;
+    line-height: 1.35;
+  }
+}
+
 .card--type-2 {
   background-color: transparent;
   padding-left: 0;
@@ -94,6 +101,8 @@
 .card__link {
   color: $color4;
   display: block;
+  font-size: 1.125rem;
+  line-height: 1.388;
   text-decoration: none;
   transition: color 0.2s ease-out;
   &:hover,
@@ -109,4 +118,6 @@
 
 .card__link__highlight {
   color: $color5;
+  padding-left: 0.1em;
+  text-decoration: underline;
 }
