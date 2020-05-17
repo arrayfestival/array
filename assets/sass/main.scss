@@ -17,9 +17,10 @@ body {
 .container {
   background-image: url('../../assets/img/bg.jpg');
   background-size: cover;
-  margin: 4rem auto 6rem;
+  margin: 0 auto;
   max-width: $container-max-width-mobile-portrait;
   @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
+    margin: 4rem auto 6rem;
     max-width: $container-max-width-mobile-landscape;
   }
   @media screen and (min-width: #{$container-max-width-tablet}) {

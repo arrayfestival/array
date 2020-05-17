@@ -6,6 +6,8 @@
 
 .list--grid {
   display: grid;
+  grid-template-columns: repeat($grid-columns-mobile-portrait, calc(#{$container-max-width-mobile-portrait} / #{$grid-columns-mobile-portrait}) [col-start]);
+  grid-template-rows: repeat($grid-rows-mobile-portrait, 50vw [row-start]);
   @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
     grid-template-columns: repeat($grid-columns-mobile-landscape, calc(#{$container-max-width-mobile-landscape} / #{$grid-columns-mobile-landscape}) [col-start]);
     grid-template-rows: repeat($grid-rows-mobile-landscape, calc(#{$container-max-width-mobile-landscape} / #{$grid-columns-mobile-landscape}) [row-start]);
