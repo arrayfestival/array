@@ -1,8 +1,15 @@
+// Offset numbers, so we can hide the main content and leave footer logos right under the top section
+$grid-rows-mobile-portrait-offset: -19;
+$grid-rows-mobile-landscape-offset: -19;
+$grid-rows-tablet-offset: -16;
+$grid-rows-desktop-offset: -14;
+
+// Grid and container definitions
 $grid-columns-mobile-portrait: 2;
 $grid-columns-mobile-landscape: 4;
 $grid-columns-tablet: 6;
 $grid-columns-desktop: 8;
-$grid-rows-mobile-portrait: 22;
+$grid-rows-mobile-portrait: 9; // Should be 22 when main content returns
 $grid-rows-mobile-landscape: 28;
 $grid-rows-tablet: 25;
 $grid-rows-desktop: 23;
@@ -10,9 +17,3 @@ $container-max-width-mobile-portrait: 100%;
 $container-max-width-mobile-landscape: 512px;
 $container-max-width-tablet: 768px;
 $container-max-width-desktop: 1024px;
-
-// Offset number, so we can hide the main content and leave funder logos right under the top section
-$grid-rows-mobile-portrait-offset: -19;
-$grid-rows-mobile-landscape-offset: -19;
-$grid-rows-tablet-offset: -16;
-$grid-rows-desktop-offset: -14;
