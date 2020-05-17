@@ -499,7 +499,7 @@
     grid-row-start: row-start #{21 + $grid-rows-tablet-offset};
   }
   @media screen and (min-width: #{$container-max-width-desktop}) {
-    grid-row-start: row-start 19;
+    grid-row-start: row-start #{19 + $grid-rows-desktop-offset};
   }
 }
 
@@ -526,7 +526,7 @@
   }
   @media screen and (min-width: #{$container-max-width-desktop}) {
     grid-column-end: col-start 7;
-    grid-row-start: row-start 19;
+    grid-row-start: row-start #{19 + $grid-rows-desktop-offset};
   }
 }
 
@@ -551,7 +551,7 @@
   @media screen and (min-width: #{$container-max-width-desktop}) {
     grid-column-start: col-start 5;
     grid-column-end: col-start 6;
-    grid-row-start: row-start 21;
+    grid-row-start: row-start #{21 + $grid-rows-desktop-offset};
     justify-content: center;
   }
   .img-fluid {
@@ -575,7 +575,7 @@
     grid-row-start: row-start #{22 + $grid-rows-tablet-offset};
   }
   @media screen and (min-width: #{$container-max-width-desktop}) {
-    grid-row-start: row-start 20;
+    grid-row-start: row-start #{20 + $grid-rows-desktop-offset};
   }
   .img-fluid {
     max-width: 7rem;
@@ -612,7 +612,7 @@
   @media screen and (min-width: #{$container-max-width-desktop}) {
     grid-column-start: col-start 3;
     grid-column-end: col-start 5;
-    grid-row-start: row-start 20;
+    grid-row-start: row-start #{20 + $grid-rows-desktop-offset};
   }
 }
 
@@ -640,6 +640,6 @@
     align-items: center;
     grid-column-start: col-start 5;
     grid-column-end: col-start 7;
-    grid-row-start: row-start 20;
+    grid-row-start: row-start #{20 + $grid-rows-desktop-offset};
   }
 }
