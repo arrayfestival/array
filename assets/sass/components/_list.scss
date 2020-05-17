@@ -482,7 +482,20 @@
   align-items: center;
   grid-column-start: 1;
   grid-column-end: col-start 2;
-  grid-row-start: row-start 23;
+  grid-row-start: row-start 24;
+  .list__item__link {
+    margin: 0 auto;
+    max-width: 80%;
+  }
+  @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
+    grid-column-start: 1;
+    grid-column-end: col-start 2;
+    grid-row-start: row-start 23;
+    .list__item__link {
+      margin: 0;
+      max-width: 100%;
+    }
+  }
   @media screen and (min-width: #{$container-max-width-tablet}) {
     grid-row-start: row-start 21;
   }
@@ -495,9 +508,17 @@
 #list__item__31 {
   align-items: center;
   grid-column-start: 1;
-  grid-column-end: col-start 4;
-  grid-row-start: row-start 24;
+  grid-column-end: col-start 2;
+  grid-row-start: row-start 23;
   justify-content: center;
+  @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
+    grid-column-start: 1;
+    grid-column-end: col-start 4;
+    grid-row-start: row-start 24;
+    .img-fluid {
+      max-width: 27rem;
+    }
+  }
   @media screen and (min-width: #{$container-max-width-tablet}) {
     grid-column-start: col-start 3;
     grid-column-end: col-start 5;
@@ -507,18 +528,21 @@
     grid-column-end: col-start 7;
     grid-row-start: row-start 19;
   }
-  .img-fluid {
-    max-width: 27rem;
-  }
 }
 
 // The Albany logo
 #list__item__32 {
   align-items: center;
-  grid-column-start: col-start 2;
-  grid-column-end: col-start 3;
-  grid-row-start: row-start 26;
-  justify-content: flex-end;
+  grid-column-start: col-start 1;
+  grid-column-end: col-start 2;
+  grid-row-start: row-start 25;
+  justify-content: center;
+  @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
+    grid-column-start: col-start 2;
+    grid-column-end: col-start 3;
+    grid-row-start: row-start 26;
+    justify-content: flex-end;
+  }
   @media screen and (min-width: #{$container-max-width-tablet}) {
     grid-column-start: col-start 4;
     grid-column-end: col-start 5;
@@ -538,10 +562,15 @@
 // Social Convention logo
 #list__item__33 {
   align-items: center;
-  grid-column-start: col-start 1;
-  grid-column-end: col-start 2;
+  grid-column-start: 1;
+  grid-column-end: col-start 1;
   grid-row-start: row-start 25;
   justify-content: center;
+  @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
+    grid-column-start: col-start 1;
+    grid-column-end: col-start 2;
+    grid-row-start: row-start 25;
+  }
   @media screen and (min-width: #{$container-max-width-tablet}) {
     grid-row-start: row-start 22;
   }
@@ -556,10 +585,25 @@
 // Call And Response logo
 #list__item__34 {
   align-items: center;
-  grid-column-start: col-start 2;
-  grid-column-end: col-start 4;
-  grid-row-start: row-start 25;
-  justify-content: center;
+  grid-column-start: 1;
+  grid-column-end: col-start 2;
+  grid-row-start: row-start 27;
+  justify-content: flex-end;
+  .list__item__link {
+    max-width: 70%;
+  }
+  @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
+    grid-column-start: col-start 2;
+    grid-column-end: col-start 4;
+    grid-row-start: row-start 25;
+    justify-content: center;
+    .list__item__link {
+      max-width: 100%;
+    }
+    .img-fluid {
+      max-width: 12rem;
+    }
+  }
   @media screen and (min-width: #{$container-max-width-tablet}) {
     align-items: flex-end;
     grid-row-start: row-start 22;
@@ -570,30 +614,32 @@
     grid-column-end: col-start 5;
     grid-row-start: row-start 20;
   }
-  .img-fluid {
-    max-width: 12rem;
-  }
 }
 
 // NX Records logo
 #list__item__35 {
   align-items: flex-end;
   grid-column-start: 1;
-  grid-column-end: col-start 2;
+  grid-column-end: col-start 1;
   grid-row-start: row-start 26;
   justify-content: center;
+  @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
+    grid-column-start: 1;
+    grid-column-end: col-start 1;
+    grid-row-start: row-start 26;
+  }
   @media screen and (min-width: #{$container-max-width-tablet}) {
     grid-column-start: col-start 6;
     grid-column-end: col-start 4;
     grid-row-start: row-start 22;
+    .img-fluid {
+      max-width: 11rem;
+    }
   }
   @media screen and (min-width: #{$container-max-width-desktop}) {
     align-items: center;
     grid-column-start: col-start 5;
     grid-column-end: col-start 7;
     grid-row-start: row-start 20;
-  }
-  .img-fluid {
-    max-width: 11rem;
   }
 }
