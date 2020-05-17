@@ -587,7 +587,7 @@
 
 // Call And Response logo
 #list__item__34 {
-  align-items: center;
+  align-items: flex-start;
   grid-column-start: 1;
   grid-column-end: col-start 2;
   grid-row-start: row-start #{27 + $grid-rows-mobile-portrait-offset};
@@ -596,6 +596,7 @@
     max-width: 70%;
   }
   @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
+    align-items: flex-end;
     grid-column-start: col-start 2;
     grid-column-end: col-start 4;
     grid-row-start: row-start #{25 + $grid-rows-mobile-landscape-offset};
@@ -608,7 +609,6 @@
     }
   }
   @media screen and (min-width: #{$container-max-width-tablet}) {
-    align-items: flex-end;
     grid-row-start: row-start #{22 + $grid-rows-tablet-offset};
     justify-content: flex-end;
   }
@@ -621,15 +621,22 @@
 
 // NX Records logo
 #list__item__35 {
-  align-items: flex-end;
+  align-items: flex-start;
   grid-column-start: 1;
-  grid-column-end: col-start 1;
+  grid-column-end: col-start 2;
   grid-row-start: row-start #{26 + $grid-rows-mobile-portrait-offset};
   justify-content: center;
+  .img-fluid {
+    max-width: 60%;
+  }
   @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
+    align-items: flex-end;
     grid-column-start: 1;
     grid-column-end: col-start 1;
     grid-row-start: row-start #{26 + $grid-rows-mobile-landscape-offset};
+    .img-fluid {
+      max-width: 100%;
+    }
   }
   @media screen and (min-width: #{$container-max-width-tablet}) {
     align-items: flex-start;
