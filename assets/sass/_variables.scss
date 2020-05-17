@@ -1,4 +1,12 @@
-$grid-columns: 8;
-$container-max-width-mobile: 100%;
-$container-max-width-tablet: 1024px;
-$container-max-width-desktop: 1280px;
+$grid-columns-mobile-portrait: 2;
+$grid-columns-mobile-landscape: 4;
+$grid-columns-tablet: 6;
+$grid-columns-desktop: 8;
+$grid-rows-mobile-portrait: 22;
+$grid-rows-mobile-landscape: 28;
+$grid-rows-tablet: 25;
+$grid-rows-desktop: 23;
+$container-max-width-mobile-portrait: 100%;
+$container-max-width-mobile-landscape: 512px;
+$container-max-width-tablet: 768px;
+$container-max-width-desktop: 1024px;

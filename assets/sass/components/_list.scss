@@ -6,105 +6,568 @@
 
 .list--grid {
   display: grid;
-  grid-template-columns: repeat($grid-columns, 12.5% [col-start]);
-  grid-template-rows: repeat(21, calc(#{$container-max-width-tablet} / 8) [row-start]);
+  @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
+    grid-template-columns: repeat($grid-columns-mobile-landscape, calc(#{$container-max-width-mobile-landscape} / #{$grid-columns-mobile-landscape}) [col-start]);
+    grid-template-rows: repeat($grid-rows-mobile-landscape, calc(#{$container-max-width-mobile-landscape} / #{$grid-columns-mobile-landscape}) [row-start]);
+  }
+  @media screen and (min-width: #{$container-max-width-tablet}) {
+    grid-template-columns: repeat($grid-columns-tablet, calc(#{$container-max-width-tablet} / #{$grid-columns-tablet}) [col-start]);
+    grid-template-rows: repeat($grid-rows-tablet, calc(#{$container-max-width-tablet} / #{$grid-columns-tablet}) [row-start]);
+  }
+  @media screen and (min-width: #{$container-max-width-desktop}) {
+    grid-template-columns: repeat($grid-columns-desktop, calc(#{$container-max-width-desktop} / #{$grid-columns-desktop}) [col-start]);
+    grid-template-rows: repeat($grid-rows-desktop, calc(#{$container-max-width-desktop} / #{$grid-columns-desktop}) [row-start]);
+  }
 }
 
-.list__item {
-  // All ARRAY letters
-  &:nth-of-type(1),
-  &:nth-of-type(2),
-  &:nth-of-type(3),
-  &:nth-of-type(4),
-  &:nth-of-type(5) {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  // A
-  &:nth-of-type(1) {
-    align-items: flex-start;
-    grid-column-start: col-start 1;
-  }
-  // R
-  &:nth-of-type(2) {
+// ARRAY logo
+#list__item__1 {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  grid-column-start: 1;
+  grid-column-end: col-start 2;
+  grid-row-start: 1;
+  grid-row-end: row-start 2;
+  @media screen and (min-width: #{$container-max-width-tablet}) {
     grid-column-start: col-start 2;
-    grid-row-start: row-start 1;
-    .icon {
-      transform: rotate(-45deg);
-    }
-  }
-  // R
-  &:nth-of-type(3) {
-    grid-column-start: col-start 1;
+    grid-column-end: col-start 5;
     grid-row-start: row-start 2;
+    grid-row-end: initial;
   }
-  // A
-  &:nth-of-type(4) {
-    grid-column-start: col-start 2;
-    grid-row-start: row-start 3;
-    .icon {
-      transform: rotate(-180deg);
-    }
+  @media screen and (min-width: #{$container-max-width-desktop}) {
+    grid-column-start: col-start 3;
+    grid-column-end: col-start 6;
   }
-  // Y
-  &:nth-of-type(5) {
-    align-items: flex-start;
-    grid-column-start: col-start 1;
-    grid-row-start: row-start 4;
-    justify-content: flex-end;
+}
+
+// Instagram link
+#list__item__2 {
+  grid-column-start: col-start 3;
+  grid-column-end: col-start 4;
+  grid-row-start: row-start 2;
+  @media screen and (min-width: #{$container-max-width-tablet}) {
+    grid-column-start: col-start 5;
+    grid-column-end: col-start 6;
   }
-  // Text card 1
-  &:nth-of-type(6) {
+  @media screen and (min-width: #{$container-max-width-desktop}) {
+    grid-column-start: col-start 7;
+    grid-column-end: col-start 8;
+  }
+}
+
+// Text card
+#list__item__6 {
+  grid-column-start: col-start 2;
+  grid-column-end: col-start 4;
+  @media screen and (min-width: #{$container-max-width-tablet}) {
+    grid-column-start: col-start 4;
+    grid-column-end: col-start 6;
+  }
+  @media screen and (min-width: #{$container-max-width-desktop}) {
     grid-column-start: col-start 5;
     grid-column-end: col-start 7;
   }
-  // Text card 2
-  &:nth-of-type(7) {
-    grid-column-start: 1;
-    grid-column-end: col-start 2;
-    grid-row-start: row-start 1;
+}
+
+// Text card
+#list__item__7 {
+  grid-column-start: 1;
+  grid-column-end: col-start 2;
+  grid-row-start: row-start 2;
+}
+
+// Text card (with link)
+#list__item__8 {
+  grid-column-start: col-start 1;
+  grid-column-end: col-start 4;
+  grid-row-start: row-start 3;
+  @media screen and (min-width: #{$container-max-width-tablet}) {
+    grid-column-start: col-start 2;
+    grid-column-end: col-start 5;
+    grid-row-start: row-start 4;
   }
-  // Text card 3 (with link)
-  &:nth-of-type(8) {
+  @media screen and (min-width: #{$container-max-width-desktop}) {
     grid-column-start: col-start 4;
     grid-column-end: col-start 7;
-    grid-row-start: row-start 4;
-    .card__text {
-      max-width: 75%;
-    }
   }
-  // First image
-  &:nth-of-type(9) {
+  .card__text {
+    max-width: 75%;
+  }
+}
+
+// First image
+#list__item__9 {
+  grid-column-start: col-start 5;
+  grid-column-end: col-start 6;
+  grid-row-start: row-start 4;
+  @media screen and (min-width: #{$container-max-width-desktop}) {
     grid-column-start: col-start 7;
     grid-column-end: col-start 8;
-    grid-row-start: row-start 4;
   }
-  // Text card 4 (first date)
-  &:nth-of-type(10) {
+}
+
+// Text card (first date)
+#list__item__10 {
+  grid-column-start: 1;
+  grid-column-end: col-start 2;
+  grid-row-start: row-start 5;
+  @media screen and (min-width: #{$container-max-width-desktop}) {
     grid-column-start: col-start 1;
     grid-column-end: col-start 3;
-    grid-row-start: row-start 5;
   }
-  // Text card 5 (first simple text)
-  &:nth-of-type(11) {
+}
+
+// Text card (first simple text)
+#list__item__11 {
+  grid-column-start: 1;
+  grid-column-end: col-start 1;
+  grid-row-start: row-start 4;
+  @media screen and (min-width: #{$container-max-width-desktop}) {
+    grid-column-start: col-start 1;
+    grid-column-end: col-start 2;
+  }
+}
+
+// Text card (Night 1 video drop)
+#list__item__12 {
+  grid-column-start: 1;
+  grid-column-end: col-start 1;
+  grid-row-start: row-start 6;
+  @media screen and (min-width: #{$container-max-width-tablet}) {
+    grid-row-start: row-start 7;
+  }
+  @media screen and (min-width: #{$container-max-width-desktop}) {
     grid-column-start: col-start 2;
-    grid-column-end: col-start 6;
-    grid-row-start: row-start 5;
+    grid-column-end: col-start 3;
   }
-  // Text card 5 (second simple text, in white)
-  &:nth-of-type(12) {
-    grid-column-start: col-start 3;
-    grid-column-end: col-start 4;
-    grid-row-start: row-start 6;
-    .card__text {
-      text-align: left;
-    }
+}
+
+// Text card (second date)
+#list__item__13 {
+  grid-column-start: 1;
+  grid-column-end: col-start 2;
+  grid-row-start: row-start 7;
+  @media screen and (min-width: #{$container-max-width-tablet}) {
+    grid-column-start: col-start 1;
+    grid-column-end: col-start 3;
   }
-  // Text card 5 (second date)
-  &:nth-of-type(13) {
+  @media screen and (min-width: #{$container-max-width-desktop}) {
     grid-column-start: col-start 3;
     grid-column-end: col-start 5;
-    grid-row-start: row-start 7;
+  }
+}
+
+// Artist title 1
+#list__item__14 {
+  grid-column-start: col-start 2;
+  grid-column-end: col-start 4;
+  grid-row-start: row-start 6;
+  @media screen and (min-width: #{$container-max-width-tablet}) {
+    grid-column-start: col-start 3;
+    grid-column-end: col-start 6;
+  }
+  @media screen and (min-width: #{$container-max-width-desktop}) {
+    grid-column-start: col-start 5;
+    grid-column-end: col-start 8;
+  }
+  .card {
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding: 0;
+  }
+}
+
+// Artist photo 1
+#list__item__15 {
+  grid-column-start: col-start 2;
+  grid-column-end: col-start 4;
+  grid-row-start: row-start 7;
+  @media screen and (min-width: #{$container-max-width-tablet}) {
+    grid-column-start: col-start 3;
+    grid-column-end: col-start 6;
+  }
+  @media screen and (min-width: #{$container-max-width-desktop}) {
+    grid-column-start: col-start 5;
+    grid-column-end: col-start 8;
+  }
+}
+
+// Artist title 2
+#list__item__16 {
+  grid-column-start: 1;
+  grid-column-end: col-start 1;
+  grid-row-start: row-start 8;
+  @media screen and (min-width: #{$container-max-width-desktop}) {
+    grid-column-start: col-start 2;
+    grid-column-end: col-start 3;
+  }
+  .card {
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding: 0;
+  }
+}
+
+// Artist photo 2
+#list__item__17 {
+  grid-column-start: 1;
+  grid-column-end: col-start 2;
+  grid-row-start: row-start 9;
+  @media screen and (min-width: #{$container-max-width-tablet}) {
+    grid-column-end: col-start 3;
+  }
+  @media screen and (min-width: #{$container-max-width-desktop}) {
+    grid-column-start: col-start 2;
+    grid-column-end: col-start 5;
+  }
+}
+
+// Artist title 3
+#list__item__18 {
+  grid-column-start: 1;
+  grid-column-end: col-start 4;
+  grid-row-start: row-start 10;
+  .card {
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 0;
+  }
+  .card__heading {
+    text-align: right;
+    transform: translateY(-0.5rem);
+  }
+  @media screen and (min-width: #{$container-max-width-tablet}) {
+    grid-column-start: col-start 3;
+    grid-column-end: col-start 6;
+    grid-row-start: row-start 11;
+    .card {
+      align-items: flex-start;
+    }
+    .card__heading {
+      transform: none;
+    }
+  }
+  @media screen and (min-width: #{$container-max-width-desktop}) {
+    grid-column-start: col-start 5;
+    grid-column-end: col-start 8;
+  }
+}
+
+// Artist photo 3
+#list__item__19 {
+  grid-column-start: col-start 2;
+  grid-column-end: col-start 4;
+  grid-row-start: row-start 9;
+  @media screen and (min-width: #{$container-max-width-tablet}) {
+    grid-column-start: col-start 3;
+    grid-column-end: col-start 6;
+  }
+  @media screen and (min-width: #{$container-max-width-desktop}) {
+    grid-column-start: col-start 5;
+    grid-column-end: col-start 8;
+  }
+}
+
+// Text card (third simple text, in white)
+#list__item__20 {
+  grid-column-start: 1;
+  grid-column-end: col-start 1;
+  grid-row-start: row-start 11;
+}
+
+// Text card (third date)
+#list__item__21 {
+  grid-column-start: 1;
+  grid-column-end: col-start 2;
+  grid-row-start: row-start 12;
+}
+
+// Artist title 4
+#list__item__22 {
+  grid-column-start: col-start 2;
+  grid-column-end: col-start 4;
+  grid-row-start: row-start 12;
+  @media screen and (min-width: #{$container-max-width-desktop}) {
+    grid-row-start: row-start 11;
+  }
+  .card {
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 0;
+  }
+  .card__heading {
+    text-align: right;
+  }
+}
+
+// Artist photo 4
+#list__item__23 {
+  grid-column-start: col-start 1;
+  grid-column-end: col-start 4;
+  grid-row-start: row-start 13;
+  @media screen and (min-width: #{$container-max-width-tablet}) {
+    grid-column-start: col-start 2;
+    grid-column-end: col-start 5;
+  }
+  @media screen and (min-width: #{$container-max-width-desktop}) {
+    grid-row-start: row-start 12;
+  }
+}
+
+// Artist title 5
+#list__item__24 {
+  grid-column-start: col-start 1;
+  grid-column-end: col-start 3;
+  grid-row-start: row-start 15;
+  @media screen and (min-width: #{$container-max-width-tablet}) {
+    grid-column-start: col-start 3;
+    grid-column-end: col-start 6;
+  }
+  @media screen and (min-width: #{$container-max-width-desktop}) {
+    grid-column-start: col-start 5;
+    grid-column-end: col-start 8;
+    grid-row-start: row-start 13;
+  }
+  .card {
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 0;
+  }
+  .card__heading {
+    text-align: right;
+  }
+}
+
+// Artist photo 5
+#list__item__25 {
+  grid-column-start: 1;
+  grid-column-end: col-start 3;
+  grid-row-start: row-start 16;
+  @media screen and (min-width: #{$container-max-width-tablet}) {
+    grid-column-start: col-start 3;
+    grid-column-end: col-start 6;
+  }
+  @media screen and (min-width: #{$container-max-width-desktop}) {
+    grid-column-start: col-start 5;
+    grid-column-end: col-start 8;
+    grid-row-start: row-start 14;
+  }
+}
+
+// Artist title 6
+#list__item__26 {
+  grid-column-start: col-start 2;
+  grid-column-end: col-start 4;
+  grid-row-start: row-start 20;
+  @media screen and (min-width: #{$container-max-width-tablet}) {
+    grid-column-start: col-start 3;
+    grid-column-end: col-start 6;
+  }
+  @media screen and (min-width: #{$container-max-width-desktop}) {
+    grid-column-start: col-start 4;
+    grid-column-end: col-start 7;
+    grid-row-start: row-start 18;
+  }
+  .card {
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 0;
+  }
+  .card__heading {
+    text-align: right;
+  }
+}
+
+// Artist photo 6
+#list__item__27 {
+  grid-column-start: col-start 1;
+  grid-column-end: col-start 4;
+  grid-row-start: row-start 18;
+  @media screen and (min-width: #{$container-max-width-tablet}) {
+    grid-column-start: col-start 3;
+    grid-column-end: col-start 6;
+  }
+  @media screen and (min-width: #{$container-max-width-desktop}) {
+    grid-column-start: col-start 4;
+    grid-column-end: col-start 7;
+    grid-row-start: row-start 16;
+  }
+}
+
+// Artist title 7
+#list__item__28 {
+  grid-column-start: 1;
+  grid-column-end: col-start 4;
+  grid-row-start: row-start 20;
+  @media screen and (min-width: #{$container-max-width-desktop}) {
+    grid-row-start: row-start 21;
+    .card__heading {
+      width: min-content;
+    }
+  }
+  .card {
+    align-items: flex-end;
+    @media screen and (min-width: #{$container-max-width-tablet}) {
+      align-items: flex-start;
+    }
+    @media screen and (min-width: #{$container-max-width-desktop}) {
+      align-items: flex-end;
+    }
+    padding: 0;
+  }
+  @media screen and (min-width: #{$container-max-width-desktop}) {
+    grid-row-start: row-start 15;
+  }
+}
+
+// Artist photo 7
+#list__item__29 {
+  grid-column-start: 1;
+  grid-column-end: col-start 3;
+  grid-row-start: row-start 21;
+  @media screen and (min-width: #{$container-max-width-tablet}) {
+    grid-row-start: row-start 18;
+  }
+  @media screen and (min-width: #{$container-max-width-desktop}) {
+    grid-column-start: col-start 1;
+    grid-column-end: col-start 4;
+    grid-row-start: row-start 16;
+  }
+}
+
+// Producer/funder logos
+#list__item__30,
+#list__item__31,
+#list__item__32,
+#list__item__33,
+#list__item__34,
+#list__item__35 {
+  display: flex;
+  height: 100%;
+  .list__item__link {
+    display: block;
+  }
+}
+
+
+// PRS logo
+#list__item__30 {
+  align-items: center;
+  grid-column-start: 1;
+  grid-column-end: col-start 2;
+  grid-row-start: row-start 23;
+  @media screen and (min-width: #{$container-max-width-tablet}) {
+    grid-row-start: row-start 21;
+  }
+  @media screen and (min-width: #{$container-max-width-desktop}) {
+    grid-row-start: row-start 19;
+  }
+}
+
+// Arts Council logo
+#list__item__31 {
+  align-items: center;
+  grid-column-start: 1;
+  grid-column-end: col-start 4;
+  grid-row-start: row-start 24;
+  justify-content: center;
+  @media screen and (min-width: #{$container-max-width-tablet}) {
+    grid-column-start: col-start 3;
+    grid-column-end: col-start 5;
+    grid-row-start: row-start 21;
+  }
+  @media screen and (min-width: #{$container-max-width-desktop}) {
+    grid-column-end: col-start 7;
+    grid-row-start: row-start 19;
+  }
+  .img-fluid {
+    max-width: 27rem;
+  }
+}
+
+// The Albany logo
+#list__item__32 {
+  align-items: center;
+  grid-column-start: col-start 2;
+  grid-column-end: col-start 3;
+  grid-row-start: row-start 26;
+  justify-content: flex-end;
+  @media screen and (min-width: #{$container-max-width-tablet}) {
+    grid-column-start: col-start 4;
+    grid-column-end: col-start 5;
+    grid-row-start: row-start 23;
+  }
+  @media screen and (min-width: #{$container-max-width-desktop}) {
+    grid-column-start: col-start 5;
+    grid-column-end: col-start 6;
+    grid-row-start: row-start 21;
+    justify-content: center;
+  }
+  .img-fluid {
+    max-width: 6.5rem;
+  }
+}
+
+// Social Convention logo
+#list__item__33 {
+  align-items: center;
+  grid-column-start: col-start 1;
+  grid-column-end: col-start 2;
+  grid-row-start: row-start 25;
+  justify-content: center;
+  @media screen and (min-width: #{$container-max-width-tablet}) {
+    grid-row-start: row-start 22;
+  }
+  @media screen and (min-width: #{$container-max-width-desktop}) {
+    grid-row-start: row-start 20;
+  }
+  .img-fluid {
+    max-width: 7rem;
+  }
+}
+
+// Call And Response logo
+#list__item__34 {
+  align-items: center;
+  grid-column-start: col-start 2;
+  grid-column-end: col-start 4;
+  grid-row-start: row-start 25;
+  justify-content: center;
+  @media screen and (min-width: #{$container-max-width-tablet}) {
+    align-items: flex-end;
+    grid-row-start: row-start 22;
+    justify-content: flex-end;
+  }
+  @media screen and (min-width: #{$container-max-width-desktop}) {
+    grid-column-start: col-start 3;
+    grid-column-end: col-start 5;
+    grid-row-start: row-start 20;
+  }
+  .img-fluid {
+    max-width: 12rem;
+  }
+}
+
+// NX Records logo
+#list__item__35 {
+  align-items: flex-end;
+  grid-column-start: 1;
+  grid-column-end: col-start 2;
+  grid-row-start: row-start 26;
+  justify-content: center;
+  @media screen and (min-width: #{$container-max-width-tablet}) {
+    grid-column-start: col-start 6;
+    grid-column-end: col-start 4;
+    grid-row-start: row-start 22;
+  }
+  @media screen and (min-width: #{$container-max-width-desktop}) {
+    align-items: center;
+    grid-column-start: col-start 5;
+    grid-column-end: col-start 7;
+    grid-row-start: row-start 20;
+  }
+  .img-fluid {
+    max-width: 11rem;
   }
 }
