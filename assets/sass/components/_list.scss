@@ -835,11 +835,10 @@
 
 #list__item__1014 {
   @media screen and (min-width: #{$container-max-width-tablet}) {
-    grid-column-start: 1;
-    grid-column-end: col-start 1;
-    grid-row-start: row-start 4;
+    display: none;
   }
   @media screen and (min-width: #{$container-max-width-desktop}) {
+    display: block;
     grid-column-start: 1;
     grid-column-end: col-start 1;
     grid-row-start: row-start 4;
@@ -847,16 +846,7 @@
 }
 
 #list__item__1015 {
-  @media screen and (min-width: #{$container-max-width-tablet}) {
-    grid-column-start: col-start 1;
-    grid-column-end: col-start 2;
-    grid-row-start: row-start 4;
-  }
-  @media screen and (min-width: #{$container-max-width-desktop}) {
-    grid-column-start: col-start 1;
-    grid-column-end: col-start 2;
-    grid-row-start: row-start 4;
-  }
+  display: none;
 }
 
 #list__item__1016 {
