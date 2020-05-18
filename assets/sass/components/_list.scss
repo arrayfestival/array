@@ -1347,10 +1347,23 @@
     background-repeat: no-repeat;
     justify-content: flex-start;
   }
-  .card__text {
+  .card__link {
+    align-items: flex-start;
+    color: $color3;
     font-size: 1.5rem;
-    margin-left: 2rem;
+    padding-left: 3rem;
     text-align: left;
+    .card__link__highlight {
+      color: $color3;
+      text-decoration: none;
+    }
+    &:hover,
+    &:focus {
+      .card__link__highlight {
+        background-color: $color3;
+        color: $color4;
+      }
+    }
   }
 }
 
