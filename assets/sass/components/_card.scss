@@ -8,7 +8,10 @@
 .card--time {
   justify-content: center;
   .card__text {
-    font-size: 2rem;
+    font-size: 1.35rem;
+    @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
+      font-size: 2rem;
+    }
     line-height: 1.06;
     text-align: center;
     @supports (background-clip: text) {

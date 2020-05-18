@@ -139,22 +139,42 @@
 // Text card (first date)
 #list__item__10 {
   grid-column-start: 1;
-  grid-column-end: col-start 2;
-  grid-row-start: row-start 5;
+  grid-column-end: col-start 1;
+  grid-row-start: row-start 4;
+  @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
+    display: none;
+  }
+  @media screen and (min-width: #{$container-max-width-tablet}) {
+    display: block;
+    grid-column-start: 1;
+    grid-column-end: col-start 1;
+    grid-row-start: row-start 4;
+  }
   @media screen and (min-width: #{$container-max-width-desktop}) {
     grid-column-start: col-start 1;
     grid-column-end: col-start 3;
+    grid-row-start: row-start 5;
   }
 }
 
 // Text card (first simple text)
 #list__item__11 {
-  grid-column-start: 1;
-  grid-column-end: col-start 1;
+  grid-column-start: col-start 1;
+  grid-column-end: col-start 2;
   grid-row-start: row-start 4;
+  @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
+    display: none;
+  }
+  @media screen and (min-width: #{$container-max-width-tablet}) {
+    display: block;
+    grid-column-start: 1;
+    grid-column-end: col-start 1;
+    grid-row-start: row-start 4;
+  }
   @media screen and (min-width: #{$container-max-width-desktop}) {
     grid-column-start: col-start 1;
     grid-column-end: col-start 2;
+    grid-row-start: row-start 4;
   }
 }
 
@@ -174,12 +194,17 @@
 
 // Text card (second date)
 #list__item__13 {
-  grid-column-start: 1;
+  grid-column-start: col-start 1;
   grid-column-end: col-start 2;
-  grid-row-start: row-start 7;
+  grid-row-start: row-start 6;
+  @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
+    display: none;
+  }
   @media screen and (min-width: #{$container-max-width-tablet}) {
+    display: block;
     grid-column-start: col-start 1;
     grid-column-end: col-start 3;
+    grid-row-start: row-start 7;
   }
   @media screen and (min-width: #{$container-max-width-desktop}) {
     grid-column-start: col-start 3;
@@ -189,12 +214,17 @@
 
 // Artist title 1
 #list__item__14 {
-  grid-column-start: col-start 2;
-  grid-column-end: col-start 4;
-  grid-row-start: row-start 6;
+  grid-column-start: col-start 1;
+  grid-column-end: col-start 2;
+  grid-row-start: row-start 7;
+  @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
+    display: none;
+  }
   @media screen and (min-width: #{$container-max-width-tablet}) {
+    display: block;
     grid-column-start: col-start 3;
     grid-column-end: col-start 6;
+    grid-row-start: row-start 6;
   }
   @media screen and (min-width: #{$container-max-width-desktop}) {
     grid-column-start: col-start 5;
@@ -209,12 +239,25 @@
 
 // Artist photo 1
 #list__item__15 {
-  grid-column-start: col-start 2;
-  grid-column-end: col-start 4;
-  grid-row-start: row-start 7;
+  grid-column-start: 1;
+  grid-column-end: col-start 2;
+  grid-row-start: row-start 8;
+  overflow: hidden;
+  .img-fluid {
+    margin-top: -10vw;
+  }
+  @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
+    display: none;
+    overflow: visible;
+    .img-fluid {
+      margin-top: 0;
+    }
+  }
   @media screen and (min-width: #{$container-max-width-tablet}) {
+    display: block;
     grid-column-start: col-start 3;
     grid-column-end: col-start 6;
+    grid-row-start: row-start 7;
   }
   @media screen and (min-width: #{$container-max-width-desktop}) {
     grid-column-start: col-start 5;
@@ -225,11 +268,19 @@
 // Artist title 2
 #list__item__16 {
   grid-column-start: 1;
-  grid-column-end: col-start 2;
-  grid-row-start: row-start 8;
+  grid-column-end: col-start 1;
+  grid-row-start: row-start 9;
+  @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
+    display: none;
+  }
+  @media screen and (min-width: #{$container-max-width-tablet}) {
+    display: none;
+  }
   @media screen and (min-width: #{$container-max-width-desktop}) {
+    display: block;
     grid-column-start: col-start 2;
     grid-column-end: col-start 4;
+    grid-row-start: row-start 8;
   }
   .card {
     align-items: flex-end;
@@ -685,7 +736,9 @@
 }
 
 #list__item__1001 {
-  display: none;
+  grid-column-start: col-start 1;
+  grid-column-end: col-start 2;
+  grid-row-start: row-start 3;
   @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
     display: none;
   }
@@ -1616,7 +1669,9 @@
 }
 
 #list__item__4001 {
-  display: none;
+  grid-column-start: col-start 1;
+  grid-column-end: col-start 2;
+  grid-row-start: row-start 2;
   @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
     display: none;
   }
@@ -1634,7 +1689,9 @@
 }
 
 #list__item__4002 {
-  display: none;
+  grid-column-start: 1;
+  grid-column-end: col-start 1;
+  grid-row-start: row-start 5;
   @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
     display: none;
   }
@@ -1670,7 +1727,9 @@
 }
 
 #list__item__4004 {
-  display: none;
+  grid-column-start: col-start 1;
+  grid-column-end: col-start 2;
+  grid-row-start: row-start 9;
   @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
     display: none;
   }
