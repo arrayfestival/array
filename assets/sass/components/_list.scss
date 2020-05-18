@@ -147,8 +147,8 @@
   @media screen and (min-width: #{$container-max-width-tablet}) {
     display: block;
     grid-column-start: 1;
-    grid-column-end: col-start 1;
-    grid-row-start: row-start 4;
+    grid-column-end: col-start 2;
+    grid-row-start: row-start 5;
   }
   @media screen and (min-width: #{$container-max-width-desktop}) {
     grid-column-start: col-start 1;
@@ -274,10 +274,12 @@
     display: none;
   }
   @media screen and (min-width: #{$container-max-width-tablet}) {
-    display: none;
+    display: block;
+    grid-column-start: 1;
+    grid-column-end: col-start 2;
+    grid-row-start: row-start 8;
   }
   @media screen and (min-width: #{$container-max-width-desktop}) {
-    display: block;
     grid-column-start: col-start 2;
     grid-column-end: col-start 4;
     grid-row-start: row-start 8;
@@ -421,11 +423,11 @@
   @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
     display: none;
   }
-  @media screen and (min-width: #{$container-max-width-desktop}) {
+  @media screen and (min-width: #{$container-max-width-tablet}) {
     display: block;
     grid-column-start: col-start 2;
     grid-column-end: col-start 4;
-    grid-row-start: row-start 11;
+    grid-row-start: row-start 12;
   }
   @media screen and (min-width: #{$container-max-width-desktop}) {
     grid-column-start: col-start 2;
@@ -462,6 +464,7 @@
     display: block;
     grid-column-start: col-start 2;
     grid-column-end: col-start 5;
+    grid-row-start: row-start 13;
   }
   @media screen and (min-width: #{$container-max-width-desktop}) {
     grid-row-start: row-start 12;
