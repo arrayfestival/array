@@ -133,6 +133,55 @@
   background-color: $color1;
 }
 
+.card--avatar {
+  padding: 0;
+  position: relative;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.4;
+  }
+  &.card--type-1 {
+    &:before {
+      background-color: $color3;
+    }
+  }
+  &.card--type-2 {
+    &:before {
+      background-color: $color5;
+    }
+  }
+  .card--type-2--style--2 {
+    &:before {
+      background-color: $color6;
+    }
+  }
+  &.card--type-3 {
+    &:before {
+      background-color: $color4;
+    }
+  }
+  &.card--type-4 {
+    &:before {
+      background-color: $color5;
+    }
+  }
+  &.card--type-5 {
+    &:before {
+      background-color: $color6;
+    }
+  }
+  &.card--type-5 {
+    &:before {
+      background-color: $color1;
+    }
+  }
+}
+
 .card__heading {
   font-size: 2rem;
   letter-spacing: 0.15em;
