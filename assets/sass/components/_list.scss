@@ -429,9 +429,20 @@
   grid-column-start: 1;
   grid-column-end: col-start 4;
   grid-row-start: row-start 20;
+  @media screen and (min-width: #{$container-max-width-tablet}) {
+    grid-column-start: 1;
+    grid-column-end: col-start 3;
+    grid-row-start: row-start 20;
+    .card__heading {
+      font-size: 1.8rem;
+    }
+  }
   @media screen and (min-width: #{$container-max-width-desktop}) {
+    grid-column-start: 1;
+    grid-column-end: col-start 4;
     grid-row-start: row-start 21;
     .card__heading {
+      font-size: 2rem;
       width: min-content;
     }
   }
@@ -1165,6 +1176,19 @@
   }
 }
 
+#list__item__2023 {
+  @media screen and (min-width: #{$container-max-width-tablet}) {
+    grid-column-start: col-start 3;
+    grid-column-end: col-start 4;
+    grid-row-start: row-start 20;
+  }
+  @media screen and (min-width: #{$container-max-width-desktop}) {
+    grid-column-start: col-start 7;
+    grid-column-end: col-start 8;
+    grid-row-start: row-start 18;
+  }
+}
+
 // Coloured cards (footer logos)
 #list__item__3000 {
   @media screen and (min-width: #{$container-max-width-tablet}) {
@@ -1379,5 +1403,18 @@
     grid-column-start: 1;
     grid-column-end: col-start 1;
     grid-row-start: row-start 14;
+  }
+}
+
+#list__item__4005 {
+  @media screen and (min-width: #{$container-max-width-tablet}) {
+    grid-column-start: col-start 1;
+    grid-column-end: col-start 2;
+    grid-row-start: row-start 17;
+  }
+  @media screen and (min-width: #{$container-max-width-desktop}) {
+    grid-column-start: col-start 7;
+    grid-column-end: col-start 8;
+    grid-row-start: row-start 17;
   }
 }
