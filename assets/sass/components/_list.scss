@@ -381,26 +381,55 @@
   }
 }
 
-// Text card (third simple text, in white)
+// Text card (night 2 video drop)
 #list__item__20 {
-  grid-column-start: 1;
-  grid-column-end: col-start 1;
-  grid-row-start: row-start 11;
+  grid-column-start: col-start 1;
+  grid-column-end: col-start 2;
+  grid-row-start: row-start 13;
+  @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
+    display: none;
+  }
+  @media screen and (min-width: #{$container-max-width-tablet}) {
+    display: block;
+    grid-column-start: 1;
+    grid-column-end: col-start 1;
+    grid-row-start: row-start 11;
+  }
 }
 
 // Text card (third date)
 #list__item__21 {
   grid-column-start: 1;
-  grid-column-end: col-start 2;
-  grid-row-start: row-start 12;
+  grid-column-end: col-start 1;
+  grid-row-start: row-start 13;
+  @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
+    display: none;
+  }
+  @media screen and (min-width: #{$container-max-width-tablet}) {
+    display: block;
+    grid-column-start: 1;
+    grid-column-end: col-start 2;
+    grid-row-start: row-start 12;
+  }
 }
 
 // Artist title 4
 #list__item__22 {
-  grid-column-start: col-start 2;
-  grid-column-end: col-start 4;
-  grid-row-start: row-start 12;
+  grid-column-start: 1;
+  grid-column-end: col-start 1;
+  grid-row-start: row-start 15;
+  @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
+    display: none;
+  }
   @media screen and (min-width: #{$container-max-width-desktop}) {
+    display: block;
+    grid-column-start: col-start 2;
+    grid-column-end: col-start 4;
+    grid-row-start: row-start 11;
+  }
+  @media screen and (min-width: #{$container-max-width-desktop}) {
+    grid-column-start: col-start 2;
+    grid-column-end: col-start 4;
     grid-row-start: row-start 11;
   }
   .card {
@@ -415,10 +444,22 @@
 
 // Artist photo 4
 #list__item__23 {
-  grid-column-start: col-start 1;
-  grid-column-end: col-start 4;
-  grid-row-start: row-start 13;
+  grid-column-start: 1;
+  grid-column-end: col-start 2;
+  grid-row-start: row-start 16;
+  overflow: hidden;
+  .img-fluid {
+    margin-top: -2vw;
+  }
+  @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
+    display: none;
+    overflow: visible;
+    .img-fluid {
+      margin-top: 0;
+    }
+  }
   @media screen and (min-width: #{$container-max-width-tablet}) {
+    display: block;
     grid-column-start: col-start 2;
     grid-column-end: col-start 5;
   }
@@ -430,11 +471,16 @@
 // Artist title 5
 #list__item__24 {
   grid-column-start: col-start 1;
-  grid-column-end: col-start 3;
-  grid-row-start: row-start 15;
+  grid-column-end: col-start 2;
+  grid-row-start: row-start 17;
+  @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
+    display: none;
+  }
   @media screen and (min-width: #{$container-max-width-tablet}) {
+    display: block;
     grid-column-start: col-start 3;
     grid-column-end: col-start 6;
+    grid-row-start: row-start 15;
   }
   @media screen and (min-width: #{$container-max-width-desktop}) {
     grid-column-start: col-start 5;
@@ -454,11 +500,18 @@
 // Artist photo 5
 #list__item__25 {
   grid-column-start: 1;
-  grid-column-end: col-start 3;
-  grid-row-start: row-start 16;
+  grid-column-end: col-start 2;
+  grid-row-start: row-start 18;
+  overflow: hidden;
+  @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
+    display: none;
+    overflow: visible;
+  }
   @media screen and (min-width: #{$container-max-width-tablet}) {
+    display: block;
     grid-column-start: col-start 3;
     grid-column-end: col-start 6;
+    grid-row-start: row-start 16;
   }
   @media screen and (min-width: #{$container-max-width-desktop}) {
     grid-column-start: col-start 5;
@@ -469,22 +522,31 @@
 
 // Artist title 6
 #list__item__26 {
-  grid-column-start: col-start 2;
-  grid-column-end: col-start 4;
-  grid-row-start: row-start 20;
+  grid-column-start: 1;
+  grid-column-end: col-start 1;
+  grid-row-start: row-start 21;
+  .card {
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding: 0;
+  }
+  @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
+    display: none;
+  }
   @media screen and (min-width: #{$container-max-width-tablet}) {
+    display: block;
     grid-column-start: col-start 3;
     grid-column-end: col-start 6;
+    grid-row-start: row-start 20;
+    .card {
+      align-items: flex-start;
+      justify-content: flex-end;
+    }
   }
   @media screen and (min-width: #{$container-max-width-desktop}) {
     grid-column-start: col-start 3;
     grid-column-end: col-start 7;
     grid-row-start: row-start 18;
-  }
-  .card {
-    align-items: flex-start;
-    justify-content: flex-end;
-    padding: 0;
   }
   .card__heading {
     text-align: right;
@@ -493,12 +555,19 @@
 
 // Artist photo 6
 #list__item__27 {
-  grid-column-start: col-start 1;
-  grid-column-end: col-start 4;
-  grid-row-start: row-start 18;
+  grid-column-start: 1;
+  grid-column-end: col-start 2;
+  grid-row-start: row-start 22;
+  overflow: hidden;
+  @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
+    display: none;
+    overflow: visible;
+  }
   @media screen and (min-width: #{$container-max-width-tablet}) {
+    display: block;
     grid-column-start: col-start 3;
     grid-column-end: col-start 6;
+    grid-row-start: row-start 18;
   }
   @media screen and (min-width: #{$container-max-width-desktop}) {
     grid-column-start: col-start 4;
@@ -510,9 +579,16 @@
 // Artist title 7
 #list__item__28 {
   grid-column-start: 1;
-  grid-column-end: col-start 4;
-  grid-row-start: row-start 20;
+  grid-column-end: col-start 2;
+  grid-row-start: row-start 19;
+  .card__heading {
+    font-size: 1.5rem;
+  }
+  @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
+    display: none;
+  }
   @media screen and (min-width: #{$container-max-width-tablet}) {
+    display: block;
     grid-column-start: 1;
     grid-column-end: col-start 3;
     grid-row-start: row-start 20;
@@ -547,9 +623,23 @@
 // Artist photo 7
 #list__item__29 {
   grid-column-start: 1;
-  grid-column-end: col-start 3;
-  grid-row-start: row-start 21;
+  grid-column-end: col-start 2;
+  grid-row-start: row-start 20;
+  overflow: hidden;
+  .img-fluid {
+    margin-top: -10vw;
+  }
+  @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
+    display: none;
+    overflow: visible;
+    .img-fluid {
+      margin-top: 0;
+    }
+  }
   @media screen and (min-width: #{$container-max-width-tablet}) {
+    display: block;
+    grid-column-start: 1;
+    grid-column-end: col-start 3;
     grid-row-start: row-start 18;
   }
   @media screen and (min-width: #{$container-max-width-desktop}) {
@@ -1050,7 +1140,9 @@
 
 // Coloured cards (main section)
 #list__item__2000 {
-  display: none;
+  grid-column-start: 1;
+  grid-column-end: col-start 1;
+  grid-row-start: row-start 17;
   @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
     display: none;
   }
@@ -1741,7 +1833,9 @@
 }
 
 #list__item__4003 {
-  display: none;
+  grid-column-start: 1;
+  grid-column-end: col-start 1;
+  grid-row-start: row-start 14;
   @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
     display: none;
   }
@@ -1779,7 +1873,9 @@
 }
 
 #list__item__4005 {
-  display: none;
+  grid-column-start: col-start 1;
+  grid-column-end: col-start 2;
+  grid-row-start: row-start 15;
   @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
     display: none;
   }

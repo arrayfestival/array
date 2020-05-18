@@ -188,12 +188,13 @@
 }
 
 .card__heading {
-  font-size: 2rem;
+  font-size: 1.6rem;
   letter-spacing: 0.15em;
   margin: 0;
   text-transform: uppercase;
   padding-left: 0.35rem;
   @media screen and (min-width: #{$container-max-width-tablet}) {
+    font-size: 2rem;
     padding-left: 0;
   }
 }
