@@ -6,13 +6,27 @@
 }
 
 .card--time {
-  padding: 0 3rem 0 5rem;
+  .card__text {
+    font-size: 2rem;
+    line-height: 1.06;
+    text-align: center;
+    @supports (background-clip: text) {
+      background: url('../../assets/img/bg.jpg') no-repeat 50% 50%;
+      background-clip: text;
+      color: transparent;
+      opacity: 0.5;
+    }
+  }
 }
 
+.card--time,
 .card--type-1 {
   background-color: $color3;
   background-image: url('../../assets/img/bg-mono.jpg');
   background-size: cover;
+}
+
+.card--type-1 {
   padding: 1rem;
   .card__text {
     font-size: 1rem;
@@ -29,12 +43,30 @@
   }
 }
 
+// Artist names
 .card--type-2 {
-  background-color: transparent;
+  background-color: $color5;
   padding-left: 0;
   padding-right: 0;
+  .card__heading {
+    color: $color3;
+    @supports (-webkit-text-stroke: 2px $color7) {
+      -webkit-text-stroke: 2px $color7;
+      -webkit-text-fill-color: $color5;
+    }
+  }
   .card__text {
     color: $color3;
+  }
+}
+
+.card--type-2--style--2 {
+  background-color: $color6;
+  .card__heading {
+    @supports (-webkit-text-stroke: 2px $color7) {
+      -webkit-text-stroke: 2px $color7;
+      -webkit-text-fill-color: $color6;
+    }
   }
 }
 
@@ -42,6 +74,7 @@
   align-items: center;
   background-color: $color4;
   justify-content: center;
+  padding: 1rem;
   position: relative;
   text-align: center;
   .card__link {

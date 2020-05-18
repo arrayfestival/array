@@ -225,11 +225,11 @@
 // Artist title 2
 #list__item__16 {
   grid-column-start: 1;
-  grid-column-end: col-start 1;
+  grid-column-end: col-start 2;
   grid-row-start: row-start 8;
   @media screen and (min-width: #{$container-max-width-desktop}) {
     grid-column-start: col-start 2;
-    grid-column-end: col-start 3;
+    grid-column-end: col-start 4;
   }
   .card {
     align-items: flex-end;
@@ -394,7 +394,7 @@
     grid-column-end: col-start 6;
   }
   @media screen and (min-width: #{$container-max-width-desktop}) {
-    grid-column-start: col-start 4;
+    grid-column-start: col-start 3;
     grid-column-end: col-start 7;
     grid-row-start: row-start 18;
   }
@@ -884,8 +884,286 @@
   }
 }
 
-// Coloured cards (footer logos)
+// Coloured cards (main section)
 #list__item__2000 {
+  @media screen and (min-width: #{$container-max-width-tablet}) {
+    grid-column-start: col-start 2;
+    grid-column-end: col-start 3;
+    grid-row-start: row-start 5;
+  }
+  @media screen and (min-width: #{$container-max-width-desktop}) {
+    grid-column-start: col-start 3;
+    grid-column-end: col-start 4;
+    grid-row-start: row-start 5;
+  }
+}
+
+#list__item__2001 {
+  @media screen and (min-width: #{$container-max-width-tablet}) {
+    grid-column-start: col-start 4;
+    grid-column-end: col-start 5;
+    grid-row-start: row-start 5;
+  }
+  @media screen and (min-width: #{$container-max-width-desktop}) {
+    grid-column-start: col-start 5;
+    grid-column-end: col-start 6;
+    grid-row-start: row-start 5;
+  }
+}
+
+#list__item__2002 {
+  @media screen and (min-width: #{$container-max-width-tablet}) {
+    grid-column-start: col-start 5;
+    grid-column-end: col-start 6;
+    grid-row-start: row-start 5;
+  }
+  @media screen and (min-width: #{$container-max-width-desktop}) {
+    grid-column-start: col-start 6;
+    grid-column-end: col-start 7;
+    grid-row-start: row-start 5;
+  }
+}
+
+#list__item__2003 {
+  display: none;
+  @media screen and (min-width: #{$container-max-width-desktop}) {
+    display: block;
+    grid-column-start: col-start 7;
+    grid-column-end: col-start 8;
+    grid-row-start: row-start 5;
+  }
+}
+
+#list__item__2004 {
+  @media screen and (min-width: #{$container-max-width-tablet}) {
+    grid-column-start: 1;
+    grid-column-end: col-start 1;
+    grid-row-start: row-start 6;
+  }
+  @media screen and (min-width: #{$container-max-width-desktop}) {
+    grid-column-start: col-start 1;
+    grid-column-end: col-start 2;
+    grid-row-start: row-start 6;
+  }
+}
+
+#list__item__2005 {
+  @media screen and (min-width: #{$container-max-width-tablet}) {
+    display: none
+  }
+  @media screen and (min-width: #{$container-max-width-desktop}) {
+    display: block;
+    grid-column-start: col-start 3;
+    grid-column-end: col-start 4;
+    grid-row-start: row-start 6;
+  }
+}
+
+#list__item__2006 {
+  @media screen and (min-width: #{$container-max-width-tablet}) {
+    grid-column-start: col-start 2;
+    grid-column-end: col-start 3;
+    grid-row-start: row-start 6;
+  }
+  @media screen and (min-width: #{$container-max-width-desktop}) {
+    grid-column-start: col-start 4;
+    grid-column-end: col-start 5;
+    grid-row-start: row-start 6;
+  }
+}
+
+#list__item__2007 {
+  @media screen and (min-width: #{$container-max-width-tablet}) {
+    display: none;
+  }
+  @media screen and (min-width: #{$container-max-width-desktop}) {
+    display: block;
+    grid-column-start: 1;
+    grid-column-end: col-start 1;
+    grid-row-start: row-start 8;
+  }
+}
+
+#list__item__2008 {
+  @media screen and (min-width: #{$container-max-width-tablet}) {
+    display: none;
+  }
+  @media screen and (min-width: #{$container-max-width-desktop}) {
+    display: block;
+    grid-column-start: col-start 1;
+    grid-column-end: col-start 2;
+    grid-row-start: row-start 8;
+  }
+}
+
+#list__item__2009 {
+  @media screen and (min-width: #{$container-max-width-tablet}) {
+    grid-column-start: col-start 2;
+    grid-column-end: col-start 3;
+    grid-row-start: row-start 10;
+  }
+  @media screen and (min-width: #{$container-max-width-desktop}) {
+    grid-column-start: col-start 4;
+    grid-column-end: col-start 5;
+    grid-row-start: row-start 10;
+  }
+}
+
+#list__item__2010 {
+  @media screen and (min-width: #{$container-max-width-tablet}) {
+    grid-column-start: col-start 3;
+    grid-column-end: col-start 4;
+    grid-row-start: row-start 10;
+  }
+  @media screen and (min-width: #{$container-max-width-desktop}) {
+    grid-column-start: col-start 5;
+    grid-column-end: col-start 6;
+    grid-row-start: row-start 10;
+  }
+}
+
+#list__item__2011 {
+  @media screen and (min-width: #{$container-max-width-tablet}) {
+    grid-column-start: col-start 2;
+    grid-column-end: col-start 3;
+    grid-row-start: row-start 11;
+  }
+  @media screen and (min-width: #{$container-max-width-desktop}) {
+    grid-column-start: col-start 4;
+    grid-column-end: col-start 5;
+    grid-row-start: row-start 11;
+  }
+}
+
+#list__item__2012 {
+  @media screen and (min-width: #{$container-max-width-tablet}) {
+    grid-column-start: col-start 5;
+    grid-column-end: col-start 6;
+    grid-row-start: row-start 12;
+  }
+  @media screen and (min-width: #{$container-max-width-desktop}) {
+    grid-column-start: col-start 7;
+    grid-column-end: col-start 8;
+    grid-row-start: row-start 12;
+  }
+}
+
+#list__item__2013 {
+  @media screen and (min-width: #{$container-max-width-tablet}) {
+    grid-column-start: col-start 1;
+    grid-column-end: col-start 2;
+    grid-row-start: row-start 13;
+  }
+  @media screen and (min-width: #{$container-max-width-desktop}) {
+    grid-column-start: col-start 4;
+    grid-column-end: col-start 5;
+    grid-row-start: row-start 13;
+  }
+}
+
+#list__item__2014 {
+  @media screen and (min-width: #{$container-max-width-tablet}) {
+    grid-column-start: col-start 5;
+    grid-column-end: col-start 6;
+    grid-row-start: row-start 14;
+  }
+  @media screen and (min-width: #{$container-max-width-desktop}) {
+    grid-column-start: col-start 5;
+    grid-column-end: col-start 6;
+    grid-row-start: row-start 13;
+  }
+}
+
+#list__item__2015 {
+  @media screen and (min-width: #{$container-max-width-tablet}) {
+    grid-column-start: col-start 1;
+    grid-column-end: col-start 2;
+    grid-row-start: row-start 14;
+  }
+  @media screen and (min-width: #{$container-max-width-desktop}) {
+    grid-column-start: col-start 4;
+    grid-column-end: col-start 5;
+    grid-row-start: row-start 14;
+  }
+}
+
+#list__item__2016 {
+  @media screen and (min-width: #{$container-max-width-tablet}) {
+    grid-column-start: 1;
+    grid-column-end: col-start 1;
+    grid-row-start: row-start 15;
+  }
+  @media screen and (min-width: #{$container-max-width-desktop}) {
+    grid-column-start: col-start 4;
+    grid-column-end: col-start 5;
+    grid-row-start: row-start 15;
+  }
+}
+
+#list__item__2017 {
+  @media screen and (min-width: #{$container-max-width-tablet}) {
+    grid-column-start: col-start 2;
+    grid-column-end: col-start 3;
+    grid-row-start: row-start 18;
+  }
+  @media screen and (min-width: #{$container-max-width-desktop}) {
+    grid-column-start: col-start 3;
+    grid-column-end: col-start 4;
+    grid-row-start: row-start 16;
+  }
+}
+
+#list__item__2018 {
+  @media screen and (min-width: #{$container-max-width-tablet}) {
+    grid-column-start: col-start 2;
+    grid-column-end: col-start 3;
+    grid-row-start: row-start 17;
+  }
+  @media screen and (min-width: #{$container-max-width-desktop}) {
+    grid-column-start: col-start 7;
+    grid-column-end: col-start 8;
+    grid-row-start: row-start 16;
+  }
+}
+
+#list__item__2019 {
+  @media screen and (min-width: #{$container-max-width-tablet}) {
+    display: none;
+  }
+  @media screen and (min-width: #{$container-max-width-desktop}) {
+    display: block;
+    grid-column-start: 1;
+    grid-column-end: col-start 1;
+    grid-row-start: row-start 18;
+  }
+}
+
+#list__item__2020 {
+  @media screen and (min-width: #{$container-max-width-tablet}) {
+    display: none;
+  }
+  @media screen and (min-width: #{$container-max-width-desktop}) {
+    display: block;
+    grid-column-start: col-start 1;
+    grid-column-end: col-start 2;
+    grid-row-start: row-start 18;
+  }
+}
+
+#list__item__2021 {
+  @media screen and (min-width: #{$container-max-width-tablet}) {
+    display: none;
+  }
+  @media screen and (min-width: #{$container-max-width-desktop}) {
+    display: block;
+    grid-column-start: col-start 2;
+    grid-column-end: col-start 3;
+    grid-row-start: row-start 18;
+  }
+}
+
+// Coloured cards (footer logos)
+#list__item__3000 {
   @media screen and (min-width: #{$container-max-width-tablet}) {
     display: none;
   }
@@ -897,7 +1175,7 @@
   }
 }
 
-#list__item__2001 {
+#list__item__3001 {
   @media screen and (min-width: #{$container-max-width-tablet}) {
     display: none;
   }
@@ -909,7 +1187,7 @@
   }
 }
 
-#list__item__2002 {
+#list__item__3002 {
   @media screen and (min-width: #{$container-max-width-tablet}) {
     grid-column-start: 1;
     grid-column-end: col-start 1;
@@ -922,7 +1200,7 @@
   }
 }
 
-#list__item__2003 {
+#list__item__3003 {
   @media screen and (min-width: #{$container-max-width-tablet}) {
     display: none;
   }
@@ -934,7 +1212,7 @@
   }
 }
 
-#list__item__2004 {
+#list__item__3004 {
   @media screen and (min-width: #{$container-max-width-tablet}) {
     display: none;
   }
@@ -946,7 +1224,7 @@
   }
 }
 
-#list__item__2005 {
+#list__item__3005 {
   @media screen and (min-width: #{$container-max-width-tablet}) {
     grid-column-start: 1;
     grid-column-end: col-start 1;
@@ -959,7 +1237,7 @@
   }
 }
 
-#list__item__2006 {
+#list__item__3006 {
   @media screen and (min-width: #{$container-max-width-tablet}) {
     grid-column-start: col-start 1;
     grid-column-end: col-start 2;
@@ -972,7 +1250,7 @@
   }
 }
 
-#list__item__2007 {
+#list__item__3007 {
   @media screen and (min-width: #{$container-max-width-tablet}) {
     grid-column-start: col-start 2;
     grid-column-end: col-start 3;
@@ -985,7 +1263,7 @@
   }
 }
 
-#list__item__2008 {
+#list__item__3008 {
   @media screen and (min-width: #{$container-max-width-tablet}) {
     grid-column-start: col-start 3;
     grid-column-end: col-start 4;
@@ -998,7 +1276,7 @@
   }
 }
 
-#list__item__2009 {
+#list__item__3009 {
   @media screen and (min-width: #{$container-max-width-tablet}) {
     grid-column-start: col-start 5;
     grid-column-end: col-start 6;
@@ -1011,7 +1289,7 @@
   }
 }
 
-#list__item__2010 {
+#list__item__3010 {
   @media screen and (min-width: #{$container-max-width-tablet}) {
     display: none;
   }
