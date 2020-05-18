@@ -667,7 +667,12 @@
 
 // Coloured cards (top section)
 #list__item__1000 {
+  display: none;
+  @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
+    display: none;
+  }
   @media screen and (min-width: #{$container-max-width-tablet}) {
+    display: block;
     grid-column-start: col-start 1;
     grid-column-end: col-start 2;
     grid-row-start: 1;
@@ -680,7 +685,12 @@
 }
 
 #list__item__1001 {
+  display: none;
+  @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
+    display: none;
+  }
   @media screen and (min-width: #{$container-max-width-tablet}) {
+    display: block;
     grid-column-start: col-start 2;
     grid-column-end: col-start 3;
     grid-row-start: 1;
@@ -693,7 +703,12 @@
 }
 
 #list__item__1002 {
+  display: none;
+  @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
+    display: none;
+  }
   @media screen and (min-width: #{$container-max-width-tablet}) {
+    display: block;
     grid-column-start: col-start 3;
     grid-column-end: col-start 4;
     grid-row-start: 1;
@@ -706,6 +721,10 @@
 }
 
 #list__item__1003 {
+  display: none;
+  @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
+    display: none;
+  }
   @media screen and (min-width: #{$container-max-width-tablet}) {
     display: none;
   }
@@ -718,7 +737,12 @@
 }
 
 #list__item__1004 {
+  display: none;
+  @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
+    display: none;
+  }
   @media screen and (min-width: #{$container-max-width-tablet}) {
+    display: block;
     grid-column-start: 1;
     grid-column-end: col-start 1;
     grid-row-start: row-start 1;
@@ -731,7 +755,12 @@
 }
 
 #list__item__1005 {
+  display: none;
+  @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
+    display: none;
+  }
   @media screen and (min-width: #{$container-max-width-tablet}) {
+    display: block;
     grid-column-start: col-start 1;
     grid-column-end: col-start 2;
     grid-row-start: row-start 1;
@@ -744,7 +773,12 @@
 }
 
 #list__item__1006 {
+  display: none;
+  @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
+    display: none;
+  }
   @media screen and (min-width: #{$container-max-width-tablet}) {
+    display: block;
     grid-column-start: col-start 5;
     grid-column-end: col-start 6;
     grid-row-start: row-start 1;
@@ -758,6 +792,10 @@
 }
 
 #list__item__1007 {
+  display: none;
+  @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
+    display: none;
+  }
   @media screen and (min-width: #{$container-max-width-tablet}) {
     display: none;
   }
@@ -770,6 +808,10 @@
 }
 
 #list__item__1008 {
+  display: none;
+  @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
+    display: none;
+  }
   @media screen and (min-width: #{$container-max-width-tablet}) {
     display: none;
   }
@@ -782,6 +824,10 @@
 }
 
 #list__item__1009 {
+  display: none;
+  @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
+    display: none;
+  }
   @media screen and (min-width: #{$container-max-width-tablet}) {
     display: none;
   }
@@ -794,6 +840,10 @@
 }
 
 #list__item__1010 {
+  display: none;
+  @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
+    display: none;
+  }
   @media screen and (min-width: #{$container-max-width-tablet}) {
     display: none;
   }
@@ -806,7 +856,12 @@
 }
 
 #list__item__1011 {
+  display: none;
+  @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
+    display: none;
+  }
   @media screen and (min-width: #{$container-max-width-tablet}) {
+    display: block;
     grid-column-start: 1;
     grid-column-end: col-start 1;
     grid-row-start: row-start 3;
@@ -819,7 +874,12 @@
 }
 
 #list__item__1012 {
+  display: none;
+  @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
+    display: none;
+  }
   @media screen and (min-width: #{$container-max-width-tablet}) {
+    display: block;
     grid-column-start: col-start 1;
     grid-column-end: col-start 2;
     grid-row-start: row-start 3;
@@ -832,7 +892,12 @@
 }
 
 #list__item__1013 {
+  display: none;
+  @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
+    display: none;
+  }
   @media screen and (min-width: #{$container-max-width-tablet}) {
+    display: block;
     grid-column-start: col-start 5;
     grid-column-end: col-start 6;
     grid-row-start: row-start 3;
@@ -845,6 +910,10 @@
 }
 
 #list__item__1014 {
+  display: none;
+  @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
+    display: none;
+  }
   @media screen and (min-width: #{$container-max-width-tablet}) {
     display: none;
   }
@@ -861,6 +930,10 @@
 }
 
 #list__item__1016 {
+  display: none;
+  @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
+    display: none;
+  }
   @media screen and (min-width: #{$container-max-width-tablet}) {
     display: none;
   }
@@ -873,7 +946,12 @@
 }
 
 #list__item__1017 {
+  display: none;
+  @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
+    display: none;
+  }
   @media screen and (min-width: #{$container-max-width-tablet}) {
+    display: block;
     grid-column-start: col-start 5;
     grid-column-end: col-start 6;
     grid-row-start: row-start 4;
@@ -887,7 +965,12 @@
 
 // Coloured cards (main section)
 #list__item__2000 {
+  display: none;
+  @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
+    display: none;
+  }
   @media screen and (min-width: #{$container-max-width-tablet}) {
+    display: block;
     grid-column-start: col-start 2;
     grid-column-end: col-start 3;
     grid-row-start: row-start 5;
@@ -900,7 +983,12 @@
 }
 
 #list__item__2001 {
+  display: none;
+  @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
+    display: none;
+  }
   @media screen and (min-width: #{$container-max-width-tablet}) {
+    display: block;
     grid-column-start: col-start 4;
     grid-column-end: col-start 5;
     grid-row-start: row-start 5;
@@ -913,7 +1001,12 @@
 }
 
 #list__item__2002 {
+  display: none;
+  @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
+    display: none;
+  }
   @media screen and (min-width: #{$container-max-width-tablet}) {
+    display: block;
     grid-column-start: col-start 5;
     grid-column-end: col-start 6;
     grid-row-start: row-start 5;
@@ -927,6 +1020,12 @@
 
 #list__item__2003 {
   display: none;
+  @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
+    display: none;
+  }
+  @media screen and (min-width: #{$container-max-width-tablet}) {
+    display: none;
+  }
   @media screen and (min-width: #{$container-max-width-desktop}) {
     display: block;
     grid-column-start: col-start 7;
@@ -936,7 +1035,12 @@
 }
 
 #list__item__2004 {
+  display: none;
+  @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
+    display: none;
+  }
   @media screen and (min-width: #{$container-max-width-tablet}) {
+    display: block;
     grid-column-start: 1;
     grid-column-end: col-start 1;
     grid-row-start: row-start 6;
@@ -949,6 +1053,10 @@
 }
 
 #list__item__2005 {
+  display: none;
+  @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
+    display: none;
+  }
   @media screen and (min-width: #{$container-max-width-tablet}) {
     display: none
   }
@@ -961,7 +1069,12 @@
 }
 
 #list__item__2006 {
+  display: none;
+  @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
+    display: none;
+  }
   @media screen and (min-width: #{$container-max-width-tablet}) {
+    display: block;
     grid-column-start: col-start 2;
     grid-column-end: col-start 3;
     grid-row-start: row-start 6;
@@ -974,6 +1087,10 @@
 }
 
 #list__item__2007 {
+  display: none;
+  @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
+    display: none;
+  }
   @media screen and (min-width: #{$container-max-width-tablet}) {
     display: none;
   }
@@ -986,6 +1103,10 @@
 }
 
 #list__item__2008 {
+  display: none;
+  @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
+    display: none;
+  }
   @media screen and (min-width: #{$container-max-width-tablet}) {
     display: none;
   }
@@ -998,7 +1119,12 @@
 }
 
 #list__item__2009 {
+  display: none;
+  @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
+    display: none;
+  }
   @media screen and (min-width: #{$container-max-width-tablet}) {
+    display: block;
     grid-column-start: col-start 2;
     grid-column-end: col-start 3;
     grid-row-start: row-start 10;
@@ -1011,7 +1137,12 @@
 }
 
 #list__item__2010 {
+  display: none;
+  @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
+    display: none;
+  }
   @media screen and (min-width: #{$container-max-width-tablet}) {
+    display: block;
     grid-column-start: col-start 3;
     grid-column-end: col-start 4;
     grid-row-start: row-start 10;
@@ -1024,7 +1155,12 @@
 }
 
 #list__item__2011 {
+  display: none;
+  @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
+    display: none;
+  }
   @media screen and (min-width: #{$container-max-width-tablet}) {
+    display: block;
     grid-column-start: col-start 2;
     grid-column-end: col-start 3;
     grid-row-start: row-start 11;
@@ -1037,7 +1173,12 @@
 }
 
 #list__item__2012 {
+  display: none;
+  @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
+    display: none;
+  }
   @media screen and (min-width: #{$container-max-width-tablet}) {
+    display: block;
     grid-column-start: col-start 5;
     grid-column-end: col-start 6;
     grid-row-start: row-start 12;
@@ -1050,7 +1191,12 @@
 }
 
 #list__item__2013 {
+  display: none;
+  @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
+    display: none;
+  }
   @media screen and (min-width: #{$container-max-width-tablet}) {
+    display: block;
     grid-column-start: col-start 1;
     grid-column-end: col-start 2;
     grid-row-start: row-start 13;
@@ -1063,7 +1209,12 @@
 }
 
 #list__item__2014 {
+  display: none;
+  @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
+    display: none;
+  }
   @media screen and (min-width: #{$container-max-width-tablet}) {
+    display: block;
     grid-column-start: col-start 5;
     grid-column-end: col-start 6;
     grid-row-start: row-start 14;
@@ -1076,7 +1227,12 @@
 }
 
 #list__item__2015 {
+  display: none;
+  @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
+    display: none;
+  }
   @media screen and (min-width: #{$container-max-width-tablet}) {
+    display: block;
     grid-column-start: col-start 1;
     grid-column-end: col-start 2;
     grid-row-start: row-start 14;
@@ -1089,7 +1245,12 @@
 }
 
 #list__item__2016 {
+  display: none;
+  @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
+    display: none;
+  }
   @media screen and (min-width: #{$container-max-width-tablet}) {
+    display: block;
     grid-column-start: 1;
     grid-column-end: col-start 1;
     grid-row-start: row-start 15;
@@ -1102,7 +1263,12 @@
 }
 
 #list__item__2017 {
+  display: none;
+  @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
+    display: none;
+  }
   @media screen and (min-width: #{$container-max-width-tablet}) {
+    display: block;
     grid-column-start: col-start 2;
     grid-column-end: col-start 3;
     grid-row-start: row-start 18;
@@ -1115,7 +1281,12 @@
 }
 
 #list__item__2018 {
+  display: none;
+  @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
+    display: none;
+  }
   @media screen and (min-width: #{$container-max-width-tablet}) {
+    display: block;
     grid-column-start: col-start 2;
     grid-column-end: col-start 3;
     grid-row-start: row-start 17;
@@ -1128,6 +1299,10 @@
 }
 
 #list__item__2019 {
+  display: none;
+  @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
+    display: none;
+  }
   @media screen and (min-width: #{$container-max-width-tablet}) {
     display: none;
   }
@@ -1140,6 +1315,10 @@
 }
 
 #list__item__2020 {
+  display: none;
+  @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
+    display: none;
+  }
   @media screen and (min-width: #{$container-max-width-tablet}) {
     display: none;
   }
@@ -1152,6 +1331,10 @@
 }
 
 #list__item__2021 {
+  display: none;
+  @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
+    display: none;
+  }
   @media screen and (min-width: #{$container-max-width-tablet}) {
     display: none;
   }
@@ -1164,7 +1347,12 @@
 }
 
 #list__item__2022 {
+  display: none;
+  @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
+    display: none;
+  }
   @media screen and (min-width: #{$container-max-width-tablet}) {
+    display: block;
     grid-column-start: col-start 5;
     grid-column-end: col-start 6;
     grid-row-start: row-start 7;
@@ -1177,7 +1365,12 @@
 }
 
 #list__item__2023 {
+  display: none;
+  @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
+    display: none;
+  }
   @media screen and (min-width: #{$container-max-width-tablet}) {
+    display: block;
     grid-column-start: col-start 3;
     grid-column-end: col-start 4;
     grid-row-start: row-start 20;
@@ -1191,6 +1384,10 @@
 
 // Coloured cards (footer logos)
 #list__item__3000 {
+  display: none;
+  @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
+    display: none;
+  }
   @media screen and (min-width: #{$container-max-width-tablet}) {
     display: none;
   }
@@ -1203,6 +1400,10 @@
 }
 
 #list__item__3001 {
+  display: none;
+  @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
+    display: none;
+  }
   @media screen and (min-width: #{$container-max-width-tablet}) {
     display: none;
   }
@@ -1215,7 +1416,12 @@
 }
 
 #list__item__3002 {
+  display: none;
+  @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
+    display: none;
+  }
   @media screen and (min-width: #{$container-max-width-tablet}) {
+    display: block;
     grid-column-start: 1;
     grid-column-end: col-start 1;
     grid-row-start: row-start 22;
@@ -1228,6 +1434,10 @@
 }
 
 #list__item__3003 {
+  display: none;
+  @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
+    display: none;
+  }
   @media screen and (min-width: #{$container-max-width-tablet}) {
     display: none;
   }
@@ -1240,6 +1450,10 @@
 }
 
 #list__item__3004 {
+  display: none;
+  @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
+    display: none;
+  }
   @media screen and (min-width: #{$container-max-width-tablet}) {
     display: none;
   }
@@ -1252,7 +1466,12 @@
 }
 
 #list__item__3005 {
+  display: none;
+  @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
+    display: none;
+  }
   @media screen and (min-width: #{$container-max-width-tablet}) {
+    display: block;
     grid-column-start: 1;
     grid-column-end: col-start 1;
     grid-row-start: row-start 23;
@@ -1265,7 +1484,12 @@
 }
 
 #list__item__3006 {
+  display: none;
+  @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
+    display: none;
+  }
   @media screen and (min-width: #{$container-max-width-tablet}) {
+    display: block;
     grid-column-start: col-start 1;
     grid-column-end: col-start 2;
     grid-row-start: row-start 23;
@@ -1278,7 +1502,12 @@
 }
 
 #list__item__3007 {
+  display: none;
+  @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
+    display: none;
+  }
   @media screen and (min-width: #{$container-max-width-tablet}) {
+    display: block;
     grid-column-start: col-start 2;
     grid-column-end: col-start 3;
     grid-row-start: row-start 23;
@@ -1291,7 +1520,12 @@
 }
 
 #list__item__3008 {
+  display: none;
+  @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
+    display: none;
+  }
   @media screen and (min-width: #{$container-max-width-tablet}) {
+    display: block;
     grid-column-start: col-start 3;
     grid-column-end: col-start 4;
     grid-row-start: row-start 23;
@@ -1304,7 +1538,12 @@
 }
 
 #list__item__3009 {
+  display: none;
+  @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
+    display: none;
+  }
   @media screen and (min-width: #{$container-max-width-tablet}) {
+    display: block;
     grid-column-start: col-start 5;
     grid-column-end: col-start 6;
     grid-row-start: row-start 23;
@@ -1317,6 +1556,10 @@
 }
 
 #list__item__3010 {
+  display: none;
+  @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
+    display: none;
+  }
   @media screen and (min-width: #{$container-max-width-tablet}) {
     display: none;
   }
@@ -1330,7 +1573,12 @@
 
 // Audience photos
 #list__item__4000 {
+  display: none;
+  @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
+    display: none;
+  }
   @media screen and (min-width: #{$container-max-width-tablet}) {
+    display: block;
     grid-column-start: col-start 1;
     grid-column-end: col-start 3;
     grid-row-start: row-start 15;
@@ -1368,7 +1616,12 @@
 }
 
 #list__item__4001 {
+  display: none;
+  @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
+    display: none;
+  }
   @media screen and (min-width: #{$container-max-width-tablet}) {
+    display: block;
     grid-column-start: 1;
     grid-column-end: col-start 1;
     grid-row-start: row-start 6;
@@ -1381,7 +1634,12 @@
 }
 
 #list__item__4002 {
+  display: none;
+  @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
+    display: none;
+  }
   @media screen and (min-width: #{$container-max-width-tablet}) {
+    display: block;
     grid-column-start: col-start 1;
     grid-column-end: col-start 2;
     grid-row-start: row-start 11;
@@ -1394,7 +1652,12 @@
 }
 
 #list__item__4003 {
+  display: none;
+  @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
+    display: none;
+  }
   @media screen and (min-width: #{$container-max-width-tablet}) {
+    display: block;
     grid-column-start: col-start 5;
     grid-column-end: col-start 6;
     grid-row-start: row-start 12;
@@ -1407,7 +1670,12 @@
 }
 
 #list__item__4004 {
+  display: none;
+  @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
+    display: none;
+  }
   @media screen and (min-width: #{$container-max-width-tablet}) {
+    display: block;
     grid-column-start: 1;
     grid-column-end: col-start 1;
     grid-row-start: row-start 14;
@@ -1420,7 +1688,12 @@
 }
 
 #list__item__4005 {
+  display: none;
+  @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
+    display: none;
+  }
   @media screen and (min-width: #{$container-max-width-tablet}) {
+    display: block;
     grid-column-start: col-start 1;
     grid-column-end: col-start 2;
     grid-row-start: row-start 17;
