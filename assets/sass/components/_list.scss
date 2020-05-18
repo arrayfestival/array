@@ -1750,7 +1750,9 @@
 
 // Audience photos
 #list__item__4000 {
-  display: none;
+  grid-column-start: 1;
+  grid-column-end: col-start 2;
+  grid-row-start: row-start 23;
   @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
     display: none;
   }
