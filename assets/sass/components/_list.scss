@@ -1162,6 +1162,19 @@
   }
 }
 
+#list__item__2022 {
+  @media screen and (min-width: #{$container-max-width-tablet}) {
+    grid-column-start: col-start 5;
+    grid-column-end: col-start 6;
+    grid-row-start: row-start 7;
+  }
+  @media screen and (min-width: #{$container-max-width-desktop}) {
+    grid-column-start: col-start 7;
+    grid-column-end: col-start 8;
+    grid-row-start: row-start 7;
+  }
+}
+
 // Coloured cards (footer logos)
 #list__item__3000 {
   @media screen and (min-width: #{$container-max-width-tablet}) {
