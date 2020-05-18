@@ -668,7 +668,7 @@
   align-items: center;
   grid-column-start: 1;
   grid-column-end: col-start 2;
-  grid-row-start: row-start #{24 + $grid-rows-mobile-portrait-offset};
+  grid-row-start: row-start #{25 + $grid-rows-mobile-portrait-offset};
   .list__item__link {
     margin: 0 auto;
     max-width: 80%;
@@ -695,7 +695,7 @@
   align-items: flex-end;
   grid-column-start: 1;
   grid-column-end: col-start 2;
-  grid-row-start: row-start #{23 + $grid-rows-mobile-portrait-offset};
+  grid-row-start: row-start #{24 + $grid-rows-mobile-portrait-offset};
   justify-content: center;
   @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
     align-items: center;
@@ -722,7 +722,7 @@
   align-items: center;
   grid-column-start: col-start 1;
   grid-column-end: col-start 2;
-  grid-row-start: row-start #{25 + $grid-rows-mobile-portrait-offset};
+  grid-row-start: row-start #{26 + $grid-rows-mobile-portrait-offset};
   justify-content: center;
   @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
     grid-column-start: col-start 2;
@@ -751,7 +751,7 @@
   align-items: center;
   grid-column-start: 1;
   grid-column-end: col-start 1;
-  grid-row-start: row-start #{25 + $grid-rows-mobile-portrait-offset};
+  grid-row-start: row-start #{26 + $grid-rows-mobile-portrait-offset};
   justify-content: center;
   @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
     grid-column-start: col-start 1;
@@ -774,7 +774,7 @@
   align-items: flex-start;
   grid-column-start: 1;
   grid-column-end: col-start 2;
-  grid-row-start: row-start #{27 + $grid-rows-mobile-portrait-offset};
+  grid-row-start: row-start #{28 + $grid-rows-mobile-portrait-offset};
   justify-content: flex-end;
   .list__item__link {
     max-width: 70%;
@@ -808,7 +808,7 @@
   align-items: flex-start;
   grid-column-start: 1;
   grid-column-end: col-start 2;
-  grid-row-start: row-start #{26 + $grid-rows-mobile-portrait-offset};
+  grid-row-start: row-start #{27 + $grid-rows-mobile-portrait-offset};
   justify-content: center;
   .img-fluid {
     max-width: 60%;
@@ -1559,7 +1559,7 @@
   }
 }
 
-// Coloured cards (footer logos)
+// Coloured cards (around footer logos)
 #list__item__3000 {
   display: none;
   @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
