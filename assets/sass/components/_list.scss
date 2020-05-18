@@ -1368,3 +1368,16 @@
     grid-row-start: row-start 12;
   }
 }
+
+#list__item__4004 {
+  @media screen and (min-width: #{$container-max-width-tablet}) {
+    grid-column-start: 1;
+    grid-column-end: col-start 1;
+    grid-row-start: row-start 14;
+  }
+  @media screen and (min-width: #{$container-max-width-desktop}) {
+    grid-column-start: 1;
+    grid-column-end: col-start 1;
+    grid-row-start: row-start 14;
+  }
+}
