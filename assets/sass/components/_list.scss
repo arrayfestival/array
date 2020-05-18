@@ -293,9 +293,23 @@
 #list__item__17 {
   grid-column-start: 1;
   grid-column-end: col-start 2;
-  grid-row-start: row-start 9;
+  grid-row-start: row-start 10;
+  overflow: hidden;
+  .img-fluid {
+    margin-top: -15vw;
+  }
+  @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
+    display: none;
+    overflow: visible;
+    .img-fluid {
+      margin-top: 0;
+    }
+  }
   @media screen and (min-width: #{$container-max-width-tablet}) {
+    display: block;
+    grid-column-start: 1;
     grid-column-end: col-start 3;
+    grid-row-start: row-start 9;
   }
   @media screen and (min-width: #{$container-max-width-desktop}) {
     grid-column-start: col-start 2;
@@ -307,15 +321,23 @@
 #list__item__18 {
   grid-column-start: 1;
   grid-column-end: col-start 4;
-  grid-row-start: row-start 10;
+  grid-row-start: row-start 11;
   .card {
     align-items: flex-end;
     justify-content: flex-end;
     padding: 0;
   }
-  .card__heading {
-    text-align: right;
-    transform: translateY(-0.5rem);
+  @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
+    display: none;
+  }
+  @media screen and (min-width: #{$container-max-width-tablet}) {
+    display: block;
+    grid-column-start: 1;
+    grid-column-end: col-start 4;
+    grid-row-start: row-start 10;
+    .card__heading {
+      text-align: right;
+    }
   }
   @media screen and (min-width: #{$container-max-width-tablet}) {
     grid-column-start: col-start 3;
@@ -323,9 +345,6 @@
     grid-row-start: row-start 11;
     .card {
       align-items: flex-start;
-    }
-    .card__heading {
-      transform: none;
     }
   }
   @media screen and (min-width: #{$container-max-width-desktop}) {
@@ -336,12 +355,25 @@
 
 // Artist photo 3
 #list__item__19 {
-  grid-column-start: col-start 2;
-  grid-column-end: col-start 4;
-  grid-row-start: row-start 9;
+  grid-column-start: 1;
+  grid-column-end: col-start 2;
+  grid-row-start: row-start 12;
+  overflow: hidden;
+  .img-fluid {
+    margin-top: -8vw;
+  }
+  @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
+    display: none;
+    overflow: visible;
+    .img-fluid {
+      margin-top: 0;
+    }
+  }
   @media screen and (min-width: #{$container-max-width-tablet}) {
+    display: block;
     grid-column-start: col-start 3;
     grid-column-end: col-start 6;
+    grid-row-start: row-start 9;
   }
   @media screen and (min-width: #{$container-max-width-desktop}) {
     grid-column-start: col-start 5;

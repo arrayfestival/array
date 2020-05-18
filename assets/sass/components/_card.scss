@@ -122,6 +122,7 @@
 
 .card--type-4 {
   background-color: $color5;
+  justify-content: center;
   padding: 0;
   .card__text {
     color: $color3;
@@ -191,6 +192,10 @@
   letter-spacing: 0.15em;
   margin: 0;
   text-transform: uppercase;
+  padding-left: 0.35rem;
+  @media screen and (min-width: #{$container-max-width-tablet}) {
+    padding-left: 0;
+  }
 }
 
 .card__text {
