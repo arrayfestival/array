@@ -703,7 +703,7 @@
   @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
     grid-column-start: 1;
     grid-column-end: col-start 2;
-    grid-row-start: row-start #{23 + $grid-rows-mobile-landscape-offset};
+    grid-row-start: row-start #{28 + $grid-rows-mobile-landscape-offset};
     .list__item__link {
       margin: 0;
       max-width: 100%;
@@ -728,7 +728,7 @@
     align-items: center;
     grid-column-start: 1;
     grid-column-end: col-start 4;
-    grid-row-start: row-start #{24 + $grid-rows-mobile-landscape-offset};
+    grid-row-start: row-start #{29 + $grid-rows-mobile-landscape-offset};
     .img-fluid {
       max-width: 27rem;
     }
@@ -754,7 +754,7 @@
   @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
     grid-column-start: col-start 2;
     grid-column-end: col-start 3;
-    grid-row-start: row-start #{26 + $grid-rows-mobile-landscape-offset};
+    grid-row-start: row-start #{31 + $grid-rows-mobile-landscape-offset};
     justify-content: flex-end;
   }
   @media screen and (min-width: #{$container-max-width-tablet}) {
@@ -783,7 +783,7 @@
   @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
     grid-column-start: col-start 1;
     grid-column-end: col-start 2;
-    grid-row-start: row-start #{25 + $grid-rows-mobile-landscape-offset};
+    grid-row-start: row-start #{30 + $grid-rows-mobile-landscape-offset};
   }
   @media screen and (min-width: #{$container-max-width-tablet}) {
     grid-row-start: row-start #{22 + $grid-rows-tablet-offset};
@@ -810,7 +810,7 @@
     align-items: flex-end;
     grid-column-start: col-start 2;
     grid-column-end: col-start 4;
-    grid-row-start: row-start #{25 + $grid-rows-mobile-landscape-offset};
+    grid-row-start: row-start #{30 + $grid-rows-mobile-landscape-offset};
     justify-content: center;
     .list__item__link {
       max-width: 100%;
@@ -844,7 +844,7 @@
     align-items: flex-end;
     grid-column-start: 1;
     grid-column-end: col-start 1;
-    grid-row-start: row-start #{26 + $grid-rows-mobile-landscape-offset};
+    grid-row-start: row-start #{31 + $grid-rows-mobile-landscape-offset};
     .img-fluid {
       max-width: 100%;
     }
