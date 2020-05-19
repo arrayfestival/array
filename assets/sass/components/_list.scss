@@ -401,10 +401,11 @@
   grid-column-end: col-start 2;
   grid-row-start: row-start 13;
   @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
-    display: none;
+    grid-column-start: 1;
+    grid-column-end: col-start 1;
+    grid-row-start: row-start 15;
   }
   @media screen and (min-width: #{$container-max-width-tablet}) {
-    display: block;
     grid-column-start: 1;
     grid-column-end: col-start 1;
     grid-row-start: row-start 11;
@@ -417,10 +418,11 @@
   grid-column-end: col-start 1;
   grid-row-start: row-start 13;
   @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
-    display: none;
+    grid-column-start: 1;
+    grid-column-end: col-start 2;
+    grid-row-start: row-start 16;
   }
   @media screen and (min-width: #{$container-max-width-tablet}) {
-    display: block;
     grid-column-start: 1;
     grid-column-end: col-start 2;
     grid-row-start: row-start 12;
@@ -433,10 +435,11 @@
   grid-column-end: col-start 1;
   grid-row-start: row-start 15;
   @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
-    display: none;
+    grid-column-start: col-start 2;
+    grid-column-end: col-start 4;
+    grid-row-start: row-start 16;
   }
   @media screen and (min-width: #{$container-max-width-tablet}) {
-    display: block;
     grid-column-start: col-start 2;
     grid-column-end: col-start 4;
     grid-row-start: row-start 12;
@@ -466,14 +469,15 @@
     margin-top: -2vw;
   }
   @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
-    display: none;
+    grid-column-start: col-start 1;
+    grid-column-end: col-start 4;
+    grid-row-start: row-start 17;
     overflow: visible;
     .img-fluid {
       margin-top: 0;
     }
   }
   @media screen and (min-width: #{$container-max-width-tablet}) {
-    display: block;
     grid-column-start: col-start 2;
     grid-column-end: col-start 5;
     grid-row-start: row-start 13;
@@ -489,10 +493,11 @@
   grid-column-end: col-start 2;
   grid-row-start: row-start 17;
   @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
-    display: none;
+    grid-column-start: col-start 2;
+    grid-column-end: col-start 4;
+    grid-row-start: row-start 19;
   }
   @media screen and (min-width: #{$container-max-width-tablet}) {
-    display: block;
     grid-column-start: col-start 3;
     grid-column-end: col-start 6;
     grid-row-start: row-start 15;
@@ -519,8 +524,10 @@
   grid-row-start: row-start 18;
   overflow: hidden;
   @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
-    display: none;
     overflow: visible;
+    grid-column-start: col-start 1;
+    grid-column-end: col-start 4;
+    grid-row-start: row-start 20;
   }
   @media screen and (min-width: #{$container-max-width-tablet}) {
     display: block;
@@ -546,17 +553,18 @@
     padding: 0;
   }
   @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
-    display: none;
-  }
-  @media screen and (min-width: #{$container-max-width-tablet}) {
-    display: block;
-    grid-column-start: col-start 3;
-    grid-column-end: col-start 6;
-    grid-row-start: row-start 20;
+    grid-column-start: col-start 2;
+    grid-column-end: col-start 4;
+    grid-row-start: row-start 27;
     .card {
       align-items: flex-start;
       justify-content: flex-end;
     }
+  }
+  @media screen and (min-width: #{$container-max-width-tablet}) {
+    grid-column-start: col-start 3;
+    grid-column-end: col-start 6;
+    grid-row-start: row-start 20;
   }
   @media screen and (min-width: #{$container-max-width-desktop}) {
     grid-column-start: col-start 3;
@@ -575,11 +583,12 @@
   grid-row-start: row-start 22;
   overflow: hidden;
   @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
-    display: none;
+    grid-column-start: col-start 1;
+    grid-column-end: col-start 4;
+    grid-row-start: row-start 25;
     overflow: visible;
   }
   @media screen and (min-width: #{$container-max-width-tablet}) {
-    display: block;
     grid-column-start: col-start 3;
     grid-column-end: col-start 6;
     grid-row-start: row-start 18;
@@ -600,7 +609,9 @@
     font-size: 1.5rem;
   }
   @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
-    display: none;
+    grid-column-start: 1;
+    grid-column-end: col-start 3;
+    grid-row-start: row-start 22;
   }
   @media screen and (min-width: #{$container-max-width-tablet}) {
     display: block;
@@ -645,14 +656,15 @@
     margin-top: -10vw;
   }
   @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
-    display: none;
+    grid-column-start: 1;
+    grid-column-end: col-start 3;
+    grid-row-start: row-start 23;
     overflow: visible;
     .img-fluid {
       margin-top: 0;
     }
   }
   @media screen and (min-width: #{$container-max-width-tablet}) {
-    display: block;
     grid-column-start: 1;
     grid-column-end: col-start 3;
     grid-row-start: row-start 18;
@@ -1769,10 +1781,11 @@
   grid-column-end: col-start 2;
   grid-row-start: row-start 23;
   @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
-    display: none;
+    grid-column-start: 1;
+    grid-column-end: col-start 2;
+    grid-row-start: row-start 19;
   }
   @media screen and (min-width: #{$container-max-width-tablet}) {
-    display: block;
     grid-column-start: col-start 1;
     grid-column-end: col-start 3;
     grid-row-start: row-start 15;
@@ -1877,10 +1890,11 @@
   grid-column-end: col-start 2;
   grid-row-start: row-start 9;
   @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
-    display: none;
+    grid-column-start: 1;
+    grid-column-end: col-start 1;
+    grid-row-start: row-start 21;
   }
   @media screen and (min-width: #{$container-max-width-tablet}) {
-    display: block;
     grid-column-start: 1;
     grid-column-end: col-start 1;
     grid-row-start: row-start 14;
@@ -1897,10 +1911,11 @@
   grid-column-end: col-start 2;
   grid-row-start: row-start 15;
   @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
-    display: none;
+    grid-column-start: col-start 3;
+    grid-column-end: col-start 4;
+    grid-row-start: row-start 24;
   }
   @media screen and (min-width: #{$container-max-width-tablet}) {
-    display: block;
     grid-column-start: col-start 1;
     grid-column-end: col-start 2;
     grid-row-start: row-start 17;
