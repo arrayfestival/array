@@ -208,8 +208,8 @@
   grid-column-end: col-start 2;
   grid-row-start: row-start 6;
   @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
-    grid-column-start: col-start 1;
-    grid-column-end: col-start 3;
+    grid-column-start: 1;
+    grid-column-end: col-start 2;
     grid-row-start: row-start 6;
   }
   @media screen and (min-width: #{$container-max-width-tablet}) {
@@ -229,7 +229,7 @@
   grid-column-end: col-start 2;
   grid-row-start: row-start 7;
   @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
-    grid-column-start: col-start 3;
+    grid-column-start: col-start 2;
     grid-column-end: col-start 4;
     grid-row-start: row-start 6;
   }
@@ -869,10 +869,12 @@
 #list__item__1000 {
   display: none;
   @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
-    display: none;
+    display: block;
+    grid-column-start: col-start 3;
+    grid-column-end: col-start 4;
+    grid-row-start: row-start 1;
   }
   @media screen and (min-width: #{$container-max-width-tablet}) {
-    display: block;
     grid-column-start: col-start 1;
     grid-column-end: col-start 2;
     grid-row-start: 1;
@@ -889,10 +891,11 @@
   grid-column-end: col-start 2;
   grid-row-start: row-start 3;
   @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
-    display: none;
+    grid-column-start: col-start 2;
+    grid-column-end: col-start 3;
+    grid-row-start: row-start 2;
   }
   @media screen and (min-width: #{$container-max-width-tablet}) {
-    display: block;
     grid-column-start: col-start 2;
     grid-column-end: col-start 3;
     grid-row-start: 1;
@@ -907,10 +910,12 @@
 #list__item__1002 {
   display: none;
   @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
-    display: none;
+    display: block;
+    grid-column-start: 1;
+    grid-column-end: col-start 1;
+    grid-row-start: row-start 3;
   }
   @media screen and (min-width: #{$container-max-width-tablet}) {
-    display: block;
     grid-column-start: col-start 3;
     grid-column-end: col-start 4;
     grid-row-start: 1;
@@ -959,10 +964,12 @@
 #list__item__1005 {
   display: none;
   @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
-    display: none;
+    display: block;
+    grid-column-start: col-start 2;
+    grid-column-end: col-start 3;
+    grid-row-start: row-start 5;
   }
   @media screen and (min-width: #{$container-max-width-tablet}) {
-    display: block;
     grid-column-start: col-start 1;
     grid-column-end: col-start 2;
     grid-row-start: row-start 1;
@@ -977,10 +984,12 @@
 #list__item__1006 {
   display: none;
   @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
-    display: none;
+    display: block;
+    grid-column-start: col-start 3;
+    grid-column-end: col-start 4;
+    grid-row-start: row-start 5;
   }
   @media screen and (min-width: #{$container-max-width-tablet}) {
-    display: block;
     grid-column-start: col-start 5;
     grid-column-end: col-start 6;
     grid-row-start: row-start 1;
@@ -1078,10 +1087,12 @@
 #list__item__1012 {
   display: none;
   @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
-    display: none;
+    display: block;
+    grid-column-start: col-start 3;
+    grid-column-end: col-start 4;
+    grid-row-start: row-start 11;
   }
   @media screen and (min-width: #{$container-max-width-tablet}) {
-    display: block;
     grid-column-start: col-start 1;
     grid-column-end: col-start 2;
     grid-row-start: row-start 3;
@@ -1127,6 +1138,7 @@
   }
 }
 
+// Why the duck?!?!
 #list__item__1015 {
   display: none;
 }
@@ -1134,7 +1146,10 @@
 #list__item__1016 {
   display: none;
   @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
-    display: none;
+    display: block;
+    grid-column-start: col-start 3;
+    grid-column-end: col-start 4;
+    grid-row-start: row-start 7;
   }
   @media screen and (min-width: #{$container-max-width-tablet}) {
     display: none;
@@ -1150,10 +1165,12 @@
 #list__item__1017 {
   display: none;
   @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
-    display: none;
+    display: block;
+    grid-column-start: col-start 3;
+    grid-column-end: col-start 4;
+    grid-row-start: row-start 10;
   }
   @media screen and (min-width: #{$container-max-width-tablet}) {
-    display: block;
     grid-column-start: col-start 5;
     grid-column-end: col-start 6;
     grid-row-start: row-start 4;
@@ -1171,10 +1188,11 @@
   grid-column-end: col-start 1;
   grid-row-start: row-start 17;
   @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
-    display: none;
+    grid-column-start: col-start 2;
+    grid-column-end: col-start 3;
+    grid-row-start: row-start 9;
   }
   @media screen and (min-width: #{$container-max-width-tablet}) {
-    display: block;
     grid-column-start: col-start 2;
     grid-column-end: col-start 3;
     grid-row-start: row-start 5;
@@ -1325,10 +1343,12 @@
 #list__item__2009 {
   display: none;
   @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
-    display: none;
+    display: block;
+    grid-column-start: col-start 1;
+    grid-column-end: col-start 2;
+    grid-row-start: row-start 12;
   }
   @media screen and (min-width: #{$container-max-width-tablet}) {
-    display: block;
     grid-column-start: col-start 2;
     grid-column-end: col-start 3;
     grid-row-start: row-start 10;
@@ -1343,10 +1363,12 @@
 #list__item__2010 {
   display: none;
   @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
-    display: none;
+    display: block;
+    grid-column-start: col-start 2;
+    grid-column-end: col-start 3;
+    grid-row-start: row-start 15;
   }
   @media screen and (min-width: #{$container-max-width-tablet}) {
-    display: block;
     grid-column-start: col-start 3;
     grid-column-end: col-start 4;
     grid-row-start: row-start 10;
@@ -1361,10 +1383,12 @@
 #list__item__2011 {
   display: none;
   @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
-    display: none;
+    display: block;
+    grid-column-start: col-start 3;
+    grid-column-end: col-start 4;
+    grid-row-start: row-start 15;
   }
   @media screen and (min-width: #{$container-max-width-tablet}) {
-    display: block;
     grid-column-start: col-start 2;
     grid-column-end: col-start 3;
     grid-row-start: row-start 11;
@@ -1379,10 +1403,12 @@
 #list__item__2012 {
   display: none;
   @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
-    display: none;
+    display: block;
+    grid-column-start: col-start 3;
+    grid-column-end: col-start 4;
+    grid-row-start: row-start 18;
   }
   @media screen and (min-width: #{$container-max-width-tablet}) {
-    display: block;
     grid-column-start: col-start 5;
     grid-column-end: col-start 6;
     grid-row-start: row-start 12;
@@ -1397,10 +1423,12 @@
 #list__item__2013 {
   display: none;
   @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
-    display: none;
+    display: block;
+    grid-column-start: 1;
+    grid-column-end: col-start 1;
+    grid-row-start: row-start 20;
   }
   @media screen and (min-width: #{$container-max-width-tablet}) {
-    display: block;
     grid-column-start: col-start 1;
     grid-column-end: col-start 2;
     grid-row-start: row-start 13;
@@ -1415,10 +1443,12 @@
 #list__item__2014 {
   display: none;
   @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
-    display: none;
+    display: block;
+    grid-column-start: col-start 2;
+    grid-column-end: col-start 3;
+    grid-row-start: row-start 23;
   }
   @media screen and (min-width: #{$container-max-width-tablet}) {
-    display: block;
     grid-column-start: col-start 5;
     grid-column-end: col-start 6;
     grid-row-start: row-start 14;
@@ -1433,10 +1463,12 @@
 #list__item__2015 {
   display: none;
   @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
-    display: none;
+    display: block;
+    grid-column-start: col-start 3;
+    grid-column-end: col-start 4;
+    grid-row-start: row-start 23;
   }
   @media screen and (min-width: #{$container-max-width-tablet}) {
-    display: block;
     grid-column-start: col-start 1;
     grid-column-end: col-start 2;
     grid-row-start: row-start 14;
@@ -1487,10 +1519,12 @@
 #list__item__2018 {
   display: none;
   @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
-    display: none;
+    display: block;
+    grid-column-start: 1;
+    grid-column-end: col-start 1;
+    grid-row-start: row-start 25;
   }
   @media screen and (min-width: #{$container-max-width-tablet}) {
-    display: block;
     grid-column-start: col-start 2;
     grid-column-end: col-start 3;
     grid-row-start: row-start 17;
@@ -1505,7 +1539,10 @@
 #list__item__2019 {
   display: none;
   @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
-    display: none;
+    display: block;
+    grid-column-start: 1;
+    grid-column-end: col-start 1;
+    grid-row-start: row-start 27;
   }
   @media screen and (min-width: #{$container-max-width-tablet}) {
     display: none;
@@ -1521,7 +1558,10 @@
 #list__item__2020 {
   display: none;
   @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
-    display: none;
+    display: block;
+    grid-column-start: col-start 1;
+    grid-column-end: col-start 2;
+    grid-row-start: row-start 27;
   }
   @media screen and (min-width: #{$container-max-width-tablet}) {
     display: none;
@@ -1537,7 +1577,10 @@
 #list__item__2021 {
   display: none;
   @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
-    display: none;
+    display: block;
+    grid-column-start: col-start 3;
+    grid-column-end: col-start 4;
+    grid-row-start: row-start 28;
   }
   @media screen and (min-width: #{$container-max-width-tablet}) {
     display: none;
@@ -1553,10 +1596,12 @@
 #list__item__2022 {
   display: none;
   @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
-    display: none;
+    display: block;
+    grid-column-start: 1;
+    grid-column-end: col-start 1;
+    grid-row-start: row-start 30;
   }
   @media screen and (min-width: #{$container-max-width-tablet}) {
-    display: block;
     grid-column-start: col-start 5;
     grid-column-end: col-start 6;
     grid-row-start: row-start 7;
@@ -1571,10 +1616,12 @@
 #list__item__2023 {
   display: none;
   @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
-    display: none;
+    display: block;
+    grid-column-start: col-start 3;
+    grid-column-end: col-start 4;
+    grid-row-start: row-start 31;
   }
   @media screen and (min-width: #{$container-max-width-tablet}) {
-    display: block;
     grid-column-start: col-start 3;
     grid-column-end: col-start 4;
     grid-row-start: row-start 20;
@@ -1606,7 +1653,10 @@
 #list__item__3001 {
   display: none;
   @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
-    display: none;
+    display: block;
+    grid-column-start: 1;
+    grid-column-end: col-start 1;
+    grid-row-start: row-start 12;
   }
   @media screen and (min-width: #{$container-max-width-tablet}) {
     display: none;
@@ -1622,10 +1672,12 @@
 #list__item__3002 {
   display: none;
   @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
-    display: none;
+    display: block;
+    grid-column-start: 1;
+    grid-column-end: col-start 1;
+    grid-row-start: row-start 11;
   }
   @media screen and (min-width: #{$container-max-width-tablet}) {
-    display: block;
     grid-column-start: 1;
     grid-column-end: col-start 1;
     grid-row-start: row-start 22;
@@ -1656,7 +1708,10 @@
 #list__item__3004 {
   display: none;
   @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
-    display: none;
+    display: block;
+    grid-column-start: col-start 1;
+    grid-column-end: col-start 2;
+    grid-row-start: row-start 31;
   }
   @media screen and (min-width: #{$container-max-width-tablet}) {
     display: none;
