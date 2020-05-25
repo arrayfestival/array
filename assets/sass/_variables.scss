@@ -1,7 +1,7 @@
 // Footer offset numbers, to make it easier to move the logos section up and down in one go
 $grid-rows-mobile-portrait-offset: 0;
-$grid-rows-mobile-landscape-offset: 0;
-$grid-rows-tablet-offset: 0;
+$grid-rows-mobile-landscape-offset: 1;
+$grid-rows-tablet-offset: 1;
 $grid-rows-desktop-offset: 2;
 
 // Grid and container definitions
@@ -10,8 +10,8 @@ $grid-columns-mobile-landscape: 4;
 $grid-columns-tablet: 6;
 $grid-columns-desktop: 8;
 $grid-rows-mobile-portrait: 29;
-$grid-rows-mobile-landscape: 32;
-$grid-rows-tablet: 24;
+$grid-rows-mobile-landscape: 33;
+$grid-rows-tablet: 25;
 $grid-rows-desktop: 24;
 $container-max-width-mobile-portrait: 100%;
 $container-max-width-mobile-landscape: 512px;
