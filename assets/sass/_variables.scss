@@ -1,18 +1,18 @@
-// Offset numbers, so we can hide the main content and leave footer logos right under the top section
-$grid-rows-mobile-portrait-offset: 0; // Should be -19 if main content is off
-$grid-rows-mobile-landscape-offset: 0; // Should be -19 if main content is off
-$grid-rows-tablet-offset: 0; // Should be -16 if main content is off
-$grid-rows-desktop-offset: 0; // Should be -14 if main content is off
+// Footer offset numbers, to make it easier to move the logos section up and down in one go
+$grid-rows-mobile-portrait-offset: 0;
+$grid-rows-mobile-landscape-offset: 1;
+$grid-rows-tablet-offset: 2;
+$grid-rows-desktop-offset: 2;
 
 // Grid and container definitions
 $grid-columns-mobile-portrait: 2;
 $grid-columns-mobile-landscape: 4;
 $grid-columns-tablet: 6;
 $grid-columns-desktop: 8;
-$grid-rows-mobile-portrait: 29; // Should be 9 if main content is off
-$grid-rows-mobile-landscape: 32; // Should be 8 if main content is off
-$grid-rows-tablet: 24; // Should be 8 if main content is off
-$grid-rows-desktop: 22;  // Should be 8 if main content is off
+$grid-rows-mobile-portrait: 29;
+$grid-rows-mobile-landscape: 33;
+$grid-rows-tablet: 26;
+$grid-rows-desktop: 24;
 $container-max-width-mobile-portrait: 100%;
 $container-max-width-mobile-landscape: 512px;
 $container-max-width-tablet: 768px;
