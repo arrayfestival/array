@@ -15,10 +15,10 @@
     line-height: 1.06;
     text-align: center;
     @supports (background-clip: text) {
-      background: url('../../assets/img/bg.jpg') no-repeat 50% 50%;
+      background: url('../../assets/img/bg-text.jpg') no-repeat 50% 50%;
       background-clip: text;
       color: transparent;
-      opacity: 0.5;
+      opacity: 0.75;
     }
   }
 }
@@ -40,7 +40,7 @@
       line-height: 1.35;
     }
     @supports (background-clip: text) {
-      background: url('../../assets/img/bg.jpg') no-repeat 50% 50%;
+      background: url('../../assets/img/bg-text.jpg') no-repeat 50% 50%;
       background-clip: text;
       color: transparent;
     }

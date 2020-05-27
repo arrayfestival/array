@@ -16,6 +16,7 @@ body {
 
 .container {
   background-image: url('../../assets/img/bg.jpg');
+  background-position: center top;
   background-size: cover;
   margin: 0 auto;
   max-width: $container-max-width-mobile-portrait;
@@ -24,7 +25,6 @@ body {
     max-width: $container-max-width-mobile-landscape;
   }
   @media screen and (min-width: #{$container-max-width-tablet}) {
-    background-position: center top;
     max-width: $container-max-width-tablet;
   }
   @media screen and (min-width: #{$container-max-width-desktop}) {
