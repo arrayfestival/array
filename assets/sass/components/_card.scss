@@ -188,7 +188,7 @@
   // Trigger captions:
   &:hover {
     .card--avatar__caption {
-      transform: scaleY(1);
+      transform: scaleX(1);
     }
     .card--avatar__caption__text,
     .card--avatar__caption__quote {
@@ -240,6 +240,7 @@
   // RIGHT:
   @media screen and (max-width: #{$container-max-width-mobile-landscape - 1}) {
     &[data-placement-xs='right'] {
+      text-align: left;
       top: 0;
       right: auto;
       bottom: auto;
@@ -260,6 +261,7 @@
   }
   @media screen and (min-width: #{$container-max-width-mobile-landscape}) and (max-width: #{$container-max-width-tablet - 1}) {
     &[data-placement-sm='right'] {
+      text-align: left;
       top: 0;
       right: auto;
       bottom: auto;
@@ -278,8 +280,9 @@
       }
     }
   }
-  @media screen and (min-width: #{$container-max-width-tablet}) and (min-width: #{$container-max-width-desktop - 1}) {
+  @media screen and (min-width: #{$container-max-width-tablet}) and (max-width: #{$container-max-width-desktop - 1}) {
     &[data-placement-md='right'] {
+      text-align: left;
       top: 0;
       right: auto;
       bottom: auto;
@@ -300,6 +303,7 @@
   }
   @media screen and (min-width: #{$container-max-width-desktop}) {
     &[data-placement-lg='right'] {
+      text-align: left;
       top: 0;
       right: auto;
       bottom: auto;
@@ -321,6 +325,7 @@
   // LEFT:
   @media screen and (max-width: #{$container-max-width-mobile-landscape - 1}) {
     &[data-placement-xs='left'] {
+      text-align: right;
       top: 0;
       right: 100%;
       bottom: auto;
@@ -341,6 +346,7 @@
   }
   @media screen and (min-width: #{$container-max-width-mobile-landscape}) and (max-width: #{$container-max-width-tablet - 1}) {
     &[data-placement-sm='left'] {
+      text-align: right;
       top: 0;
       right: 100%;
       bottom: auto;
@@ -361,6 +367,7 @@
   }
   @media screen and (min-width: #{$container-max-width-tablet}) and (max-width: #{$container-max-width-desktop - 1}) {
     &[data-placement-md='left'] {
+      text-align: right;
       top: 0;
       right: 100%;
       bottom: auto;
@@ -381,6 +388,7 @@
   }
   @media screen and (min-width: #{$container-max-width-desktop}) {
     &[data-placement-lg='left'] {
+      text-align: right;
       top: 0;
       right: 100%;
       bottom: auto;
