@@ -278,6 +278,29 @@
   }
 }
 
+.card--video {
+  justify-content: center;
+  .icon--play {
+    width: 4rem;
+    height: 2.875rem;
+  }
+}
+
+.card--video--type-1 {
+  background-color: $color3;
+  background-image: url('../../assets/img/bg-mono.jpg');
+  background-size: cover;
+  .icon {
+    fill: $color5;
+  }
+  &:hover,
+  &:focus {
+    .icon {
+      fill: $color2;
+    }
+  }
+}
+
 .card__heading {
   font-size: 1.6rem;
   letter-spacing: 0.15em;
