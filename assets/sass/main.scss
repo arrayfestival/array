@@ -15,19 +15,22 @@ body {
 }
 
 .container {
-  background-image: url('../../assets/img/bg.jpg');
+  background-image: url('../../assets/img/bg-xs.jpg');
   background-position: center top;
   background-size: cover;
   margin: 0 auto;
   max-width: $container-max-width-mobile-portrait;
   @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
+    background-image: url('../../assets/img/bg-sm.jpg');
     margin: 4rem auto 6rem;
     max-width: $container-max-width-mobile-landscape;
   }
   @media screen and (min-width: #{$container-max-width-tablet}) {
+    background-image: url('../../assets/img/bg-md.jpg');
     max-width: $container-max-width-tablet;
   }
   @media screen and (min-width: #{$container-max-width-desktop}) {
+    background-image: url('../../assets/img/bg-lg.jpg');
     max-width: $container-max-width-desktop;
   }
 }
