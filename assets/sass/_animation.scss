@@ -1,0 +1,9 @@
+.js {
+  .card,
+  .logo-main,
+  .artist-image,
+  .logo {
+    opacity: 0;
+    will-change: opacity, transform;
+  }
+}
