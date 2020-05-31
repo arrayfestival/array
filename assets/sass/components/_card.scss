@@ -292,7 +292,8 @@
   }
 }
 
-.card--video--type-1 {
+.card--video--type-1,
+.card--video--type-3 {
   background-color: $color3;
   background-image: url('../../assets/img/bg-mono.jpg');
   background-size: cover;
@@ -304,6 +305,12 @@
 .card--video--type-2 {
   .icon--play {
     fill: $color3;
+  }
+}
+
+.card--video--type-3 {
+  .icon--play {
+    fill: $color6;
   }
 }
 

@@ -2322,3 +2322,24 @@
     grid-row-start: row-start 8;
   }
 }
+
+#list__item__5002 {
+  grid-column-start: col-start 1;
+  grid-column-end: col-start 2;
+  grid-row-start: row-start 21;
+  @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
+    grid-column-start: 1;
+    grid-column-end: col-start 1;
+    grid-row-start: row-start 19;
+  }
+  @media screen and (min-width: #{$container-max-width-tablet}) {
+    grid-column-start: col-start 1;
+    grid-column-end: col-start 2;
+    grid-row-start: row-start 15;
+  }
+  @media screen and (min-width: #{$container-max-width-desktop}) {
+    grid-column-start: col-start 1;
+    grid-column-end: col-start 2;
+    grid-row-start: row-start 14;
+  }
+}
