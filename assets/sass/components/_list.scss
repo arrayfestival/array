@@ -55,7 +55,7 @@
 #list__item__2 {
   grid-column-start: 1;
   grid-column-end: col-start 1;
-  grid-row-start: row-start 2;
+  grid-row-start: row-start 3;
   @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
     grid-column-start: col-start 3;
     grid-column-end: col-start 4;
@@ -96,7 +96,7 @@
 #list__item__7 {
   grid-column-start: 1;
   grid-column-end: col-start 1;
-  grid-row-start: row-start 3;
+  grid-row-start: row-start 2;
   @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
     grid-column-start: 1;
     grid-column-end: col-start 2;
