@@ -93,13 +93,13 @@
     letter-spacing: 0.15em;
     width: 100%;
   }
-  &:hover,
-  &:focus {
-    .card__link {
+  .card__link--icon {
+    &:hover,
+    &:focus {
       color: $color3;
-    }
-    .icon {
-      fill: $color3;
+      .icon {
+        fill: $color3;
+      }
     }
   }
   .card__text {
@@ -185,8 +185,10 @@
       background-color: $color1;
     }
   }
-  // Trigger captions:
-  &:hover {
+  // Trigger captions.
+  // Just use hover, unless you're iOS where we'll have to use JS to toggle a class :(
+  &:hover,
+  &.active {
     .card--avatar__caption {
       transform: scaleX(1);
     }
