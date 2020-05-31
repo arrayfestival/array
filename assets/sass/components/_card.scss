@@ -233,33 +233,32 @@
     width: 0;
     height: 0;
     position: absolute;
-    @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
-
-    }
-    @media screen and (min-width: #{$container-max-width-tablet}) {
-
-    }
-    @media screen and (min-width: #{$container-max-width-desktop}) {
-
+  }
+  //
+  // Position - 2 possible positions, times 4 possible breakpoints
+  //
+  // RIGHT:
+  @media screen and (max-width: #{$container-max-width-mobile-landscape - 1}) {
+    &[data-placement-xs='right'] {
+      top: 0;
+      right: auto;
+      bottom: auto;
+      left: 100%;
+      transform-origin: top left;
+      &:before {
+        border-top: 0.5rem solid transparent;
+        border-right: 0.5rem solid $color2;
+        border-bottom: 0.5rem solid transparent;
+        border-left: none;
+        transform: translateY(-50%);
+        top: 25vw;
+        right: auto;
+        bottom: auto;
+        left: -0.5rem;
+      }
     }
   }
-  // Position - 4 possible positions, times 4 possible breakpoints
-  &[data-placement-xs='right'] {
-    top: 0;
-    right: auto;
-    bottom: auto;
-    left: 100%;
-    transform-origin: top left;
-    &:before {
-      border-top: 0.5rem solid transparent;
-      border-bottom: 0.5rem solid transparent;
-      border-right: 0.5rem solid $color2;
-      left: -0.5rem;
-      transform: translateY(-50%);
-      top: 25vw;
-    }
-  }
-  @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
+  @media screen and (min-width: #{$container-max-width-mobile-landscape}) and (max-width: #{$container-max-width-tablet - 1}) {
     &[data-placement-sm='right'] {
       top: 0;
       right: auto;
@@ -268,15 +267,18 @@
       transform-origin: top left;
       &:before {
         border-top: 0.5rem solid transparent;
-        border-bottom: 0.5rem solid transparent;
         border-right: 0.5rem solid $color2;
-        left: -0.5rem;
+        border-bottom: 0.5rem solid transparent;
+        border-left: none;
         transform: translateY(-50%);
         top: calc((#{$container-max-width-mobile-landscape} / #{$grid-columns-mobile-landscape}) / 2);
+        right: auto;
+        bottom: auto;
+        left: -0.5rem;
       }
     }
   }
-  @media screen and (min-width: #{$container-max-width-tablet}) {
+  @media screen and (min-width: #{$container-max-width-tablet}) and (min-width: #{$container-max-width-desktop - 1}) {
     &[data-placement-md='right'] {
       top: 0;
       right: auto;
@@ -285,11 +287,14 @@
       transform-origin: top left;
       &:before {
         border-top: 0.5rem solid transparent;
-        border-bottom: 0.5rem solid transparent;
         border-right: 0.5rem solid $color2;
-        left: -0.5rem;
+        border-bottom: 0.5rem solid transparent;
+        border-left: none;
         transform: translateY(-50%);
         top: calc((#{$container-max-width-tablet} / #{$grid-columns-tablet}) / 2);
+        right: auto;
+        bottom: auto;
+        left: -0.5rem;
       }
     }
   }
@@ -302,11 +307,95 @@
       transform-origin: top left;
       &:before {
         border-top: 0.5rem solid transparent;
-        border-bottom: 0.5rem solid transparent;
         border-right: 0.5rem solid $color2;
-        left: -0.5rem;
+        border-bottom: 0.5rem solid transparent;
+        border-left: none;
         transform: translateY(-50%);
         top: calc((#{$container-max-width-desktop} / #{$grid-columns-desktop}) / 2);
+        right: auto;
+        bottom: auto;
+        left: -0.5rem;
+      }
+    }
+  }
+  // LEFT:
+  @media screen and (max-width: #{$container-max-width-mobile-landscape - 1}) {
+    &[data-placement-xs='left'] {
+      top: 0;
+      right: 100%;
+      bottom: auto;
+      left: auto;
+      transform-origin: top right;
+      &:before {
+        border-top: 0.5rem solid transparent;
+        border-right: none;
+        border-bottom: 0.5rem solid transparent;
+        border-left: 0.5rem solid $color2;
+        transform: translateY(-50%);
+        top: 25vw;
+        right: -0.5rem;
+        bottom: auto;
+        left: auto;
+      }
+    }
+  }
+  @media screen and (min-width: #{$container-max-width-mobile-landscape}) and (max-width: #{$container-max-width-tablet - 1}) {
+    &[data-placement-sm='left'] {
+      top: 0;
+      right: 100%;
+      bottom: auto;
+      left: auto;
+      transform-origin: top right;
+      &:before {
+        border-top: 0.5rem solid transparent;
+        border-right: none;
+        border-bottom: 0.5rem solid transparent;
+        border-left: 0.5rem solid $color2;
+        transform: translateY(-50%);
+        top: calc((#{$container-max-width-mobile-landscape} / #{$grid-columns-mobile-landscape}) / 2);
+        right: -0.5rem;
+        bottom: auto;
+        left: auto;
+      }
+    }
+  }
+  @media screen and (min-width: #{$container-max-width-tablet}) and (max-width: #{$container-max-width-desktop - 1}) {
+    &[data-placement-md='left'] {
+      top: 0;
+      right: 100%;
+      bottom: auto;
+      left: auto;
+      transform-origin: top right;
+      &:before {
+        border-top: 0.5rem solid transparent;
+        border-right: none;
+        border-bottom: 0.5rem solid transparent;
+        border-left: 0.5rem solid $color2;
+        transform: translateY(-50%);
+        top: calc((#{$container-max-width-tablet} / #{$grid-columns-tablet}) / 2);
+        right: -0.5rem;
+        bottom: auto;
+        left: auto;
+      }
+    }
+  }
+  @media screen and (min-width: #{$container-max-width-desktop}) {
+    &[data-placement-lg='left'] {
+      top: 0;
+      right: 100%;
+      bottom: auto;
+      left: auto;
+      transform-origin: top right;
+      &:before {
+        border-top: 0.5rem solid transparent;
+        border-right: none;
+        border-bottom: 0.5rem solid transparent;
+        border-left: 0.5rem solid $color2;
+        transform: translateY(-50%);
+        top: calc((#{$container-max-width-desktop} / #{$grid-columns-desktop}) / 2);
+        right: -0.5rem;
+        bottom: auto;
+        left: auto;
       }
     }
   }
