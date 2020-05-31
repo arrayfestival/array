@@ -284,20 +284,26 @@
     width: 4rem;
     height: 2.875rem;
   }
+  &:hover,
+  &:focus {
+    .icon {
+      fill: $color2;
+    }
+  }
 }
 
 .card--video--type-1 {
   background-color: $color3;
   background-image: url('../../assets/img/bg-mono.jpg');
   background-size: cover;
-  .icon {
+  .icon--play {
     fill: $color5;
   }
-  &:hover,
-  &:focus {
-    .icon {
-      fill: $color2;
-    }
+}
+
+.card--video--type-2 {
+  .icon--play {
+    fill: $color3;
   }
 }
 
