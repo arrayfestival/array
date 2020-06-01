@@ -8,16 +8,24 @@
 .card--time {
   justify-content: center;
   .card__text {
+    filter: hue-rotate(0);
     font-size: 1.35rem;
     @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
       font-size: 2rem;
     }
     line-height: 1.06;
     text-align: center;
+    transition: filter 0.5s ease-out;
     @supports (background-clip: text) {
       background: url('../../assets/img/bg-text.jpg') no-repeat 50% 50%;
       background-clip: text;
       color: transparent;
+    }
+  }
+  &:hover,
+  &:focus {
+    .card__text {
+      filter: hue-rotate(90deg);
     }
   }
 }
@@ -32,8 +40,10 @@
 .card--type-1 {
   padding: 1rem;
   .card__text {
+    filter: hue-rotate(0);
     font-size: 1rem;
     line-height: 1.35;
+    transition: filter 0.5s ease-out;
     @media screen and (min-width: #{$container-max-width-tablet}) {
       font-size: 1.25rem;
       line-height: 1.35;
@@ -42,6 +52,14 @@
       background: url('../../assets/img/bg-text.jpg') no-repeat 50% 50%;
       background-clip: text;
       color: transparent;
+    }
+  }
+  &:not(.card--type-1--no-hover) {
+    &:hover,
+    &:focus {
+      .card__text {
+        filter: hue-rotate(180deg);
+      }
     }
   }
 }
