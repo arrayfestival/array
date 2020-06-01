@@ -26,9 +26,9 @@ $(function () {
       sign = '-'
     }
     if (direction === 2 || direction === 3) {
-      gsap.from(elem, {duration: 1, x: sign + '20', delay: delay})
+      gsap.from(elem, {duration: 1, x: sign + '30', delay: delay})
     } else {
-      gsap.from(elem, {duration: 1, y: sign + '20', delay: delay})
+      gsap.from(elem, {duration: 1, y: sign + '30', delay: delay})
     }
     gsap.to(elem, {duration: 1, opacity: 1, delay: delay})
   })
