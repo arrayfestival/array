@@ -8,17 +8,24 @@
 .card--time {
   justify-content: center;
   .card__text {
+    filter: hue-rotate(0);
     font-size: 1.35rem;
     @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
       font-size: 2rem;
     }
     line-height: 1.06;
     text-align: center;
+    transition: filter 0.5s ease-out;
     @supports (background-clip: text) {
-      background: url('../../assets/img/bg.jpg') no-repeat 50% 50%;
+      background: url('../../assets/img/bg-text.jpg') no-repeat 50% 50%;
       background-clip: text;
       color: transparent;
-      opacity: 0.5;
+    }
+  }
+  &:hover,
+  &:focus {
+    .card__text {
+      filter: hue-rotate(90deg);
     }
   }
 }
@@ -33,16 +40,26 @@
 .card--type-1 {
   padding: 1rem;
   .card__text {
+    filter: hue-rotate(0);
     font-size: 1rem;
     line-height: 1.35;
+    transition: filter 0.5s ease-out;
     @media screen and (min-width: #{$container-max-width-tablet}) {
       font-size: 1.25rem;
       line-height: 1.35;
     }
     @supports (background-clip: text) {
-      background: url('../../assets/img/bg.jpg') no-repeat 50% 50%;
+      background: url('../../assets/img/bg-text.jpg') no-repeat 50% 50%;
       background-clip: text;
       color: transparent;
+    }
+  }
+  &:not(.card--type-1--no-hover) {
+    &:hover,
+    &:focus {
+      .card__text {
+        filter: hue-rotate(180deg);
+      }
     }
   }
 }
@@ -94,13 +111,13 @@
     letter-spacing: 0.15em;
     width: 100%;
   }
-  &:hover,
-  &:focus {
-    .card__link {
+  .card__link--icon {
+    &:hover,
+    &:focus {
       color: $color3;
-    }
-    .icon {
-      fill: $color3;
+      .icon {
+        fill: $color3;
+      }
     }
   }
   .card__text {
@@ -139,8 +156,10 @@
 }
 
 .card--avatar {
+  margin: 0;
   padding: 0;
   position: relative;
+  z-index: 1;
   &:before {
     content: '';
     position: absolute;
@@ -185,6 +204,296 @@
       background-color: $color1;
     }
   }
+  // Trigger captions.
+  // Just use hover, unless you're iOS where we'll have to use JS to toggle a class :(
+  &:hover,
+  &.active {
+    .card--avatar__caption {
+      transform: scaleX(1);
+    }
+    .card--avatar__caption__text,
+    .card--avatar__caption__quote {
+      opacity: 1;
+      transition: opacity .3s ease-out .1s;
+    }
+  }
+}
+
+.card--avatar__caption {
+  background-color: $color2;
+  display: none !important; // Disabled for now, to restore set this back to display: flex;
+  filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+  flex-direction: column;
+  justify-content: center;
+  letter-spacing: 0.15em;
+  padding: 1rem;
+  pointer-events: none;
+  position: absolute;
+  text-transform: uppercase;
+  transform: scaleX(0);
+  transition: transform .1s ease-out;
+  z-index: 1;
+  // Dimensions
+  min-height: 50vw;
+  width: 50vw;
+  @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
+    min-height: calc(#{$container-max-width-mobile-landscape} / #{$grid-columns-mobile-landscape});
+    width: calc((#{$container-max-width-mobile-landscape} / #{$grid-columns-mobile-landscape}) * 2);
+  }
+  @media screen and (min-width: #{$container-max-width-tablet}) {
+    min-height: calc(#{$container-max-width-tablet} / #{$grid-columns-tablet});
+    width: calc((#{$container-max-width-tablet} / #{$grid-columns-tablet}) * 2);
+  }
+  @media screen and (min-width: #{$container-max-width-desktop}) {
+    min-height: calc(#{$container-max-width-desktop} / #{$grid-columns-desktop});
+    width: calc((#{$container-max-width-desktop} / #{$grid-columns-desktop}) * 2);
+  }
+  // Triangle
+  &:before {
+    content: '';
+    width: 0;
+    height: 0;
+    position: absolute;
+  }
+  //
+  // Position - 2 possible positions, times 4 possible breakpoints
+  //
+  // RIGHT:
+  @media screen and (max-width: #{$container-max-width-mobile-landscape - 1}) {
+    &[data-placement-xs='right'] {
+      text-align: left;
+      top: 0;
+      right: auto;
+      bottom: auto;
+      left: 100%;
+      transform-origin: top left;
+      &:before {
+        border-top: 0.5rem solid transparent;
+        border-right: 0.5rem solid $color2;
+        border-bottom: 0.5rem solid transparent;
+        border-left: none;
+        transform: translateY(-50%);
+        top: 25vw;
+        right: auto;
+        bottom: auto;
+        left: -0.5rem;
+      }
+    }
+  }
+  @media screen and (min-width: #{$container-max-width-mobile-landscape}) and (max-width: #{$container-max-width-tablet - 1}) {
+    &[data-placement-sm='right'] {
+      text-align: left;
+      top: 0;
+      right: auto;
+      bottom: auto;
+      left: 100%;
+      transform-origin: top left;
+      &:before {
+        border-top: 0.5rem solid transparent;
+        border-right: 0.5rem solid $color2;
+        border-bottom: 0.5rem solid transparent;
+        border-left: none;
+        transform: translateY(-50%);
+        top: calc((#{$container-max-width-mobile-landscape} / #{$grid-columns-mobile-landscape}) / 2);
+        right: auto;
+        bottom: auto;
+        left: -0.5rem;
+      }
+    }
+  }
+  @media screen and (min-width: #{$container-max-width-tablet}) and (max-width: #{$container-max-width-desktop - 1}) {
+    &[data-placement-md='right'] {
+      text-align: left;
+      top: 0;
+      right: auto;
+      bottom: auto;
+      left: 100%;
+      transform-origin: top left;
+      &:before {
+        border-top: 0.5rem solid transparent;
+        border-right: 0.5rem solid $color2;
+        border-bottom: 0.5rem solid transparent;
+        border-left: none;
+        transform: translateY(-50%);
+        top: calc((#{$container-max-width-tablet} / #{$grid-columns-tablet}) / 2);
+        right: auto;
+        bottom: auto;
+        left: -0.5rem;
+      }
+    }
+  }
+  @media screen and (min-width: #{$container-max-width-desktop}) {
+    &[data-placement-lg='right'] {
+      text-align: left;
+      top: 0;
+      right: auto;
+      bottom: auto;
+      left: 100%;
+      transform-origin: top left;
+      &:before {
+        border-top: 0.5rem solid transparent;
+        border-right: 0.5rem solid $color2;
+        border-bottom: 0.5rem solid transparent;
+        border-left: none;
+        transform: translateY(-50%);
+        top: calc((#{$container-max-width-desktop} / #{$grid-columns-desktop}) / 2);
+        right: auto;
+        bottom: auto;
+        left: -0.5rem;
+      }
+    }
+  }
+  // LEFT:
+  @media screen and (max-width: #{$container-max-width-mobile-landscape - 1}) {
+    &[data-placement-xs='left'] {
+      text-align: right;
+      top: 0;
+      right: 100%;
+      bottom: auto;
+      left: auto;
+      transform-origin: top right;
+      &:before {
+        border-top: 0.5rem solid transparent;
+        border-right: none;
+        border-bottom: 0.5rem solid transparent;
+        border-left: 0.5rem solid $color2;
+        transform: translateY(-50%);
+        top: 25vw;
+        right: -0.5rem;
+        bottom: auto;
+        left: auto;
+      }
+    }
+  }
+  @media screen and (min-width: #{$container-max-width-mobile-landscape}) and (max-width: #{$container-max-width-tablet - 1}) {
+    &[data-placement-sm='left'] {
+      text-align: right;
+      top: 0;
+      right: 100%;
+      bottom: auto;
+      left: auto;
+      transform-origin: top right;
+      &:before {
+        border-top: 0.5rem solid transparent;
+        border-right: none;
+        border-bottom: 0.5rem solid transparent;
+        border-left: 0.5rem solid $color2;
+        transform: translateY(-50%);
+        top: calc((#{$container-max-width-mobile-landscape} / #{$grid-columns-mobile-landscape}) / 2);
+        right: -0.5rem;
+        bottom: auto;
+        left: auto;
+      }
+    }
+  }
+  @media screen and (min-width: #{$container-max-width-tablet}) and (max-width: #{$container-max-width-desktop - 1}) {
+    &[data-placement-md='left'] {
+      text-align: right;
+      top: 0;
+      right: 100%;
+      bottom: auto;
+      left: auto;
+      transform-origin: top right;
+      &:before {
+        border-top: 0.5rem solid transparent;
+        border-right: none;
+        border-bottom: 0.5rem solid transparent;
+        border-left: 0.5rem solid $color2;
+        transform: translateY(-50%);
+        top: calc((#{$container-max-width-tablet} / #{$grid-columns-tablet}) / 2);
+        right: -0.5rem;
+        bottom: auto;
+        left: auto;
+      }
+    }
+  }
+  @media screen and (min-width: #{$container-max-width-desktop}) {
+    &[data-placement-lg='left'] {
+      text-align: right;
+      top: 0;
+      right: 100%;
+      bottom: auto;
+      left: auto;
+      transform-origin: top right;
+      &:before {
+        border-top: 0.5rem solid transparent;
+        border-right: none;
+        border-bottom: 0.5rem solid transparent;
+        border-left: 0.5rem solid $color2;
+        transform: translateY(-50%);
+        top: calc((#{$container-max-width-desktop} / #{$grid-columns-desktop}) / 2);
+        right: -0.5rem;
+        bottom: auto;
+        left: auto;
+      }
+    }
+  }
+}
+
+.card--avatar__caption__text {
+  display: block;
+  line-height: 1.4;
+  opacity: 0;
+}
+
+.card--avatar__caption__quote {
+  display: block;
+  line-height: 1.4;
+  margin: 0.5rem 0;
+  opacity: 0;
+  position: relative;
+  &:before,
+  &:after {
+    letter-spacing: 0;
+    position: absolute;
+  }
+  &:before {
+    content: '“';
+    left: -0.6em;
+  }
+  &:after {
+    content: '”';
+  }
+}
+
+.card--video {
+  justify-content: center;
+  .icon--play {
+    width: 4rem;
+    height: 2.875rem;
+  }
+  &:hover,
+  &:focus {
+    .icon {
+      fill: $color2;
+    }
+  }
+}
+
+.card--video--type-1,
+.card--video--type-3 {
+  background-color: $color3;
+  background-image: url('../../assets/img/bg-mono.jpg');
+  background-size: cover;
+  .icon--play {
+    fill: $color5;
+  }
+}
+
+.card--video--type-2 {
+  .icon--play {
+    fill: $color3;
+  }
+}
+
+.card--video--type-3 {
+  .icon--play {
+    fill: $color6;
+  }
+}
+
+.card--link {
+  text-decoration: none;
 }
 
 .card__heading {

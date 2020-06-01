@@ -2,6 +2,7 @@
 @import 'palette';
 @import 'typography';
 @import 'utilities';
+@import 'animation';
 @import 'components/card';
 @import 'components/icons';
 @import 'components/list';
@@ -14,20 +15,32 @@ body {
   background-color: $color1;
 }
 
+::selection {
+  -webkit-text-fill-color: $color2;
+  background: $color4;
+  color: $color2;
+}
+
 .container {
-  background-image: url('../../assets/img/bg.jpg');
+  background-image: url('../../assets/img/bg-xs.jpg');
+  background-position: center top;
   background-size: cover;
   margin: 0 auto;
   max-width: $container-max-width-mobile-portrait;
+  overflow: hidden;
   @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
-    margin: 4rem auto 6rem;
+    background-image: url('../../assets/img/bg-sm.jpg');
+    margin: 0 auto 6rem;
     max-width: $container-max-width-mobile-landscape;
+    overflow: visible;
   }
   @media screen and (min-width: #{$container-max-width-tablet}) {
-    background-position: center top;
+    background-image: url('../../assets/img/bg-md.jpg');
+    margin-top: 4rem;
     max-width: $container-max-width-tablet;
   }
   @media screen and (min-width: #{$container-max-width-desktop}) {
+    background-image: url('../../assets/img/bg-lg.jpg');
     max-width: $container-max-width-desktop;
   }
 }
