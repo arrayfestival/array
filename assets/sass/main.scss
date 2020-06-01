@@ -16,6 +16,7 @@ body {
 }
 
 ::selection {
+  -webkit-text-fill-color: $color2;
   background: $color4;
   color: $color2;
 }
