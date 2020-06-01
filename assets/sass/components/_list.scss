@@ -1291,11 +1291,11 @@
     display: block;
     grid-column-start: 1;
     grid-column-end: col-start 1;
-    grid-row-start: row-start 6;
+    grid-row-start: row-start 12;
   }
   @media screen and (min-width: #{$container-max-width-desktop}) {
-    grid-column-start: col-start 1;
-    grid-column-end: col-start 2;
+    grid-column-start: 1;
+    grid-column-end: col-start 1;
     grid-row-start: row-start 6;
   }
 }
