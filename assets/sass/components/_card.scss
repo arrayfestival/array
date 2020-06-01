@@ -203,7 +203,7 @@
 
 .card--avatar__caption {
   background-color: $color2;
-  display: flex;
+  display: none !important; // Disabled for now, to restore set this back to display: flex;
   filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
   flex-direction: column;
   justify-content: center;
