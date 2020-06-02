@@ -6,4 +6,9 @@
     opacity: 0;
     will-change: opacity, transform;
   }
+  .card--type-6,
+  .card--type-7 {
+    opacity: 1;
+    will-change: opacity, transform;
+  }
 }
