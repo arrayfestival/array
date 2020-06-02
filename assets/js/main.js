@@ -22,13 +22,13 @@ $(function () {
     })
     var $remainingCards = $('.card:not(.card--type-1):not(.card--type-6):not(.card--type-7):not(.card--time), .logo, .artist-image')
     $remainingCards.each(function (index, elem) {
-      var delay = 3 + (Math.random() * 3)
+      var delay = 3 + (Math.random() * 2)
       gsap.to(elem, {duration: 1, opacity: 1, delay: delay})
     })
-    gsap.to($('.container-background'), {duration: .5, opacity: 1, delay: 7})
+    gsap.to($('.container-background'), {duration: .5, opacity: 1, delay: 6})
     var gapCards = $('.card--type-7')
     gapCards.each(function (index, elem) {
-      var delay = 7 + (Math.random() * 2)
+      var delay = 6 + (Math.random() * 2)
       gsap.to(elem, {duration: .5, opacity: 0, delay: delay})
     })
   }
