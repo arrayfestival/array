@@ -23,16 +23,6 @@ $(function () {
     var $remainingCards = $('.card:not(.card--type-1):not(.card--type-6):not(.card--type-7):not(.card--time), .logo, .artist-image')
     $remainingCards.each(function (index, elem) {
       var delay = 3 + (Math.random() * 3)
-      var direction = Math.floor(Math.random() * 4)
-      var sign = ''
-      if (direction === 1 || direction === 2) {
-        sign = '-'
-      }
-      if (direction === 2 || direction === 3) {
-        gsap.from(elem, {duration: 1, x: sign + '30', delay: delay})
-      } else {
-        gsap.from(elem, {duration: 1, y: sign + '30', delay: delay})
-      }
       gsap.to(elem, {duration: 1, opacity: 1, delay: delay})
     })
     gsap.to($('.container-background'), {duration: .5, opacity: 1, delay: 7})
