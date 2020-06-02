@@ -5,6 +5,8 @@
 }
 
 .list--grid {
+  position: relative;
+  z-index: 1;
   display: grid;
   grid-template-columns: repeat($grid-columns-mobile-portrait, calc(#{$container-max-width-mobile-portrait} / #{$grid-columns-mobile-portrait}) [col-start]);
   grid-template-rows: repeat($grid-rows-mobile-portrait, 50vw [row-start]);
