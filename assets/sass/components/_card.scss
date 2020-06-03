@@ -226,6 +226,9 @@
       transition: opacity .3s ease-out .1s;
     }
   }
+  .img-fluid {
+    filter: grayscale(1);
+  }
 }
 
 .card--avatar__caption {
