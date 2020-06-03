@@ -169,9 +169,6 @@
   padding: 0;
   position: relative;
   z-index: 1;
-  img{
-      filter: grayscale(100%);
-  }
   &:before {
     content: '';
     position: absolute;
@@ -179,7 +176,7 @@
     right: 0;
     bottom: 0;
     left: 0;
-    opacity: 0.5;
+    opacity: 0.4;
   }
   &.card--type-1 {
     &:before {
