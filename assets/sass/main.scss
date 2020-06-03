@@ -22,25 +22,43 @@ body {
 }
 
 .container {
-  background-image: url('../../assets/img/bg-xs.jpg');
-  background-position: center top;
-  background-size: cover;
   margin: 0 auto;
   max-width: $container-max-width-mobile-portrait;
   overflow: hidden;
+  position: relative;
   @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
-    background-image: url('../../assets/img/bg-sm.jpg');
     margin: 0 auto 6rem;
     max-width: $container-max-width-mobile-landscape;
     overflow: visible;
   }
   @media screen and (min-width: #{$container-max-width-tablet}) {
-    background-image: url('../../assets/img/bg-md.jpg');
     margin-top: 4rem;
     max-width: $container-max-width-tablet;
   }
   @media screen and (min-width: #{$container-max-width-desktop}) {
-    background-image: url('../../assets/img/bg-lg.jpg');
     max-width: $container-max-width-desktop;
+  }
+}
+
+.container-background {
+  background-image: url('../../assets/img/bg-xs.jpg');
+  background-position: center top;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
+    background-image: url('../../assets/img/bg-sm.jpg');
+  }
+  @media screen and (min-width: #{$container-max-width-tablet}) {
+    background-image: url('../../assets/img/bg-md.jpg');
+  }
+  @media screen and (min-width: #{$container-max-width-desktop}) {
+    background-image: url('../../assets/img/bg-lg.jpg');
+  }
+  .js & {
+    opacity: 0;
   }
 }
