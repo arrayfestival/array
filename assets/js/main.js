@@ -23,13 +23,33 @@ $(function () {
     var $remainingCards = $('.card:not(.card--type-1):not(.card--type-6):not(.card--type-7):not(.card--time), .logo, .artist-image')
     $remainingCards.each(function (index, elem) {
       var delay = 3 + (Math.random() * 2)
+      var direction = Math.floor(Math.random() * 4)
+      var sign = ''
+      if (direction === 1 || direction === 2) {
+        sign = '-'
+      }
+      if (direction === 2 || direction === 3) {
+        gsap.from(elem, {duration: 1, x: sign + '30', delay: delay})
+      } else {
+        gsap.from(elem, {duration: 1, y: sign + '30', delay: delay})
+      }
       gsap.to(elem, {duration: 1, opacity: 1, delay: delay})
     })
-    gsap.to($('.container-background'), {duration: .5, opacity: 1, delay: 6})
-    var gapCards = $('.card--type-7')
-    gapCards.each(function (index, elem) {
-      var delay = 6 + (Math.random() * 2)
-      gsap.to(elem, {duration: .5, opacity: 0, delay: delay})
+    gsap.to($('.container-background'), {duration: 1, opacity: 1, delay: 6})
+    var $gapCards = $('.card--type-7')
+    $gapCards.each(function (index, elem) {
+      var delay = 7 + (Math.random() * 2)
+      var direction = Math.floor(Math.random() * 4)
+      var $gapCard = $(elem)
+      $gapCard.css('transform-origin', 'top left')
+      if (direction === 1 || direction === 2) {
+        $gapCard.css('transform-origin', 'bottom right')
+      }
+      if (direction === 2 || direction === 3) {
+        gsap.to(elem, {duration: .5, scaleX: 0, delay: delay})
+      } else {
+        gsap.to(elem, {duration: .5, scaleY: 0, delay: delay})
+      }
     })
   }
 })
