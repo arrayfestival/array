@@ -2293,9 +2293,9 @@
   grid-column-end: col-start 2;
   grid-row-start: row-start 5;
   @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
-    grid-column-start: col-start 1;
-    grid-column-end: col-start 2;
-    grid-row-start: row-start 5;
+    grid-column-start: col-start 3;
+    grid-column-end: col-start 4;
+    grid-row-start: row-start 9;
   }
   @media screen and (min-width: #{$container-max-width-tablet}) {
     grid-column-start: col-start 1;
@@ -2310,13 +2310,14 @@
 }
 
 #list__item__5001 {
-  grid-column-start: col-start 1;
-  grid-column-end: col-start 2;
-  grid-row-start: row-start 14;
+  display: block;
+  grid-column-start: 1;
+  grid-column-end: col-start 1;
+  grid-row-start: row-start 7;
   @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
-    grid-column-start: col-start 3;
-    grid-column-end: col-start 4;
-    grid-row-start: row-start 9;
+    grid-column-start: col-start 1;
+    grid-column-end: col-start 2;
+    grid-row-start: row-start 5;
   }
   @media screen and (min-width: #{$container-max-width-tablet}) {
     grid-column-start: col-start 2;
@@ -2354,9 +2355,9 @@
 // Colour squares (fill gaps)
 #list__item__6000 {
   display: block;
-  grid-column-start: 1;
-  grid-column-end: col-start 1;
-  grid-row-start: row-start 7;
+  grid-column-start: col-start 1;
+  grid-column-end: col-start 2;
+  grid-row-start: row-start 14;
   @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
     display: block;
     grid-column-start: col-start 2;
