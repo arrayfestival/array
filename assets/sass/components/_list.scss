@@ -75,19 +75,23 @@
 
 // Text card
 #list__item__6 {
-  grid-column-start: col-start 1;
-  grid-column-end: col-start 2;
+  grid-column-start: 1;
+  grid-column-end: col-start 1;
+  grid-row-start: row-start 2;
   @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
     grid-column-start: col-start 2;
     grid-column-end: col-start 4;
+    grid-row-start: row-start 1;
   }
   @media screen and (min-width: #{$container-max-width-tablet}) {
     grid-column-start: col-start 4;
     grid-column-end: col-start 6;
+    grid-row-start: 1;
   }
   @media screen and (min-width: #{$container-max-width-desktop}) {
     grid-column-start: col-start 5;
     grid-column-end: col-start 7;
+    grid-row-start: 1;
   }
   .card__text {
     text-align: left;
@@ -96,9 +100,9 @@
 
 // Text card
 #list__item__7 {
-  grid-column-start: 1;
-  grid-column-end: col-start 1;
-  grid-row-start: row-start 2;
+  grid-column-start: col-start 1;
+  grid-column-end: col-start 2;
+  grid-row-start: row-start 3;
   @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
     grid-column-start: 1;
     grid-column-end: col-start 2;
@@ -900,7 +904,7 @@
     display: block;
     grid-column-start: col-start 3;
     grid-column-end: col-start 4;
-    grid-row-start: row-start 1;
+    grid-row-start: 1;
   }
   @media screen and (min-width: #{$container-max-width-tablet}) {
     grid-column-start: col-start 1;
@@ -914,14 +918,15 @@
   }
 }
 
-#list__item__1001 {
+#list__item__1001 { // BLACK LIVES MATTER card
   grid-column-start: col-start 1;
   grid-column-end: col-start 2;
-  grid-row-start: row-start 3;
+  grid-row-start: 1;
   @media screen and (min-width: #{$container-max-width-mobile-landscape}) {
+    display: block;
     grid-column-start: col-start 2;
     grid-column-end: col-start 3;
-    grid-row-start: row-start 2;
+    grid-row-start: 1;
   }
   @media screen and (min-width: #{$container-max-width-tablet}) {
     grid-column-start: col-start 2;
@@ -2356,7 +2361,7 @@
     display: block;
     grid-column-start: col-start 2;
     grid-column-end: col-start 3;
-    grid-row-start: row-start 1;
+    grid-row-start: row-start 2;
   }
   @media screen and (min-width: #{$container-max-width-tablet}) {
     display: block;
